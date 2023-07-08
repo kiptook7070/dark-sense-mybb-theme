@@ -1,0 +1,5833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Dark Sense" version="1830">
+	<properties>
+		<templateset><![CDATA[5]]></templateset>
+		<editortheme><![CDATA[defaultdark.css]]></editortheme>
+		<imgdir><![CDATA[images/mybbdark]]></imgdir>
+		<logo><![CDATA[images/mybbdark/logo_white.png]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[]]></color>
+		<disporder><![CDATA[a:15:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:12:"avatarep.css";i:8;s:15:"onlinetoday.css";i:9;s:16:"thankyoulike.css";i:10;s:11:"usefull.css";i:11;s:7:"new.css";i:12;s:14:"flexforums.css";i:13;s:7:"ucp.css";i:15;s:9:"sense.css";i:16;}]]></disporder>
+	</properties>
+	<stylesheets>
+		<stylesheet name="global.css" version="1830"><![CDATA[html {background: #161a21; margin: 0; padding:0;}
+body {
+    background: #161a21;
+    color: #a0a0a0;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-size: 13px;
+    overflow-y: scroll;
+}
+
+a:link, a:visited {
+    color: #cbd3df;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+	color: #ccc;
+	text-decoration: none;
+}
+
+#container {
+	color: #a0a0a0;
+	text-align: left;
+	line-height: 1.4;
+	margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font-size: 13px;
+	min-width: 990px;
+}
+
+.wrapper {
+	width: 85%;
+	min-width: 970px;
+	max-width: 1500px;
+	margin: auto auto;
+}
+
+#logo {
+	background: #161a21;
+	padding: 10px 0;
+	border-bottom: 1px solid #252525;
+}
+
+#content {
+    background: #161a21;
+    width: auto !important;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+#header ul.menu li a i {
+   color:#a0a0a0;
+}
+
+#header ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#header ul.menu li {
+	margin: 0 7px;
+	display: inline;
+}
+
+#logo ul.top_links {
+	font-weight: bold;
+	text-align: right;
+	margin: -10px 5px 0 0;
+}
+
+
+#panel .upper a.logout {
+	font-weight: bold;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+#panel .upper a.login,
+#panel .upper a.lost_password {
+	padding-left: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .upper a.register {
+	padding-right: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .lower ul.panel_links {
+	float: left;
+}
+
+
+#panel .lower ul.user_links {
+	float: right;
+}
+
+#panel .lower ul.user_links li a {
+	padding: 0;
+	background-image: none;
+}
+
+#panel .upper {
+	background: #0066a2;
+	color: #fff;
+	padding: 7px;
+	clear: both;
+}
+
+#panel .upper a:link,
+#panel .upper a:visited{
+	color:#FFF;
+}
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #ccc;
+}
+
+#panel .lower {
+	background: #353535;
+	padding: 5px;
+}
+
+#panel .lower a:link,
+#panel .lower a:visited {
+	color:#ccc;
+}
+#panel .lower a:hover,
+#panel .lower a:active {
+	color: #fff;
+}
+
+#search {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+	vertical-align: middle;
+}
+
+#search input.button,
+#search input.textbox {
+	border-color: #353535;
+}
+
+#search input.button {
+	background: #353535;
+	color: #fff;
+}
+
+#search input {
+	margin: -3px 0;
+}
+
+#quick_login .remember_me input {
+	vertical-align: middle;
+	margin: -3px 0 0 5px;
+}
+
+#footer {
+	clear: both;
+}
+
+#footer ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer ul.menu li {
+	margin: 0 5px;
+	display: inline;
+}
+
+#footer .upper {
+	background: #353535;
+	padding: 6px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+	color: #CCC;
+}
+
+#footer .upper .language {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .language select {
+	border-color: #ccc;
+}
+
+#footer .upper .theme {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .theme select {
+	border-color: #353535;
+}
+
+#footer .upper ul.bottom_links {
+	float: left;
+	margin: 4px 0 0 0;
+}
+
+#footer .lower {
+	color: #a0a0a0;
+	background: #262626;
+	padding: 6px 6px 12px 6px;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+#footer .lower a:link,
+#footer .lower a:visited {
+	color: #ccc;
+	font-weight: bold;
+}
+
+#footer .lower a:hover,
+#footer .lower a:active {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#footer .lower #current_time {
+	float: right;
+	color: #888;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	font-size: 11px;
+}
+
+.scaleimages img {
+	max-width: 100%;
+}
+
+.forum_status {height: 25px;width: 25px;font-size: 25px;text-align: center;}
+
+.forum_status i {display: inline-block;line-height: 25px;}
+
+.forum_on {
+color: #0066a2;
+}
+
+.forum_off, .forum_offlock, .forum_offlink {
+color: #666;
+}
+
+
+.forum_off i:before {
+    content: "\f114";
+}
+
+.forum_offlock i:before {
+content: "\f023";
+}
+
+.forum_offlink i:before {
+content: "\f064";
+}
+
+.subforumicon {
+height: 10px;
+width: 10px;
+display: inline-block;
+  margin: 0 5px;
+}
+
+.subforum_minion {
+color: #0066a2;
+}
+
+.subforum_minioff, .subforum_miniofflock, .subforum_miniofflink {color: #666;}
+
+
+.subforum_minioff i:before {
+content: "\f114";
+}
+
+
+.subforum_miniofflock i:before {
+content: "\f023";
+}
+
+.subforum_miniofflink i:before {
+content: "\f0c1";
+}
+
+table {
+	color: #a0a0a0;
+	font-size: 13px;
+}
+
+.tborder {
+	width: 100%;
+    margin: auto auto;
+    border: 1px solid #2e2e2e;
+}
+
+.tfixed {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+.thead {
+	background: #0066a2;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.thead a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:hover,
+.thead a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.tcat {
+	background: #353535;
+	color: #fff;
+	padding: 6px;
+	font-size: 12px;
+}
+
+.tcat a:link {
+	color: #fff;
+}
+
+.tcat a:visited {
+	color: #fff;
+}
+
+.tcat a:hover,
+.tcat a:active {
+	color: #fff;
+}
+
+.trow1, .trow2 {
+    background: #262626;
+    border-bottom: 1px solid #2e2e2e;
+    border-left: 1px solid #2e2e2e;
+    padding: 10px;
+}
+
+.trow_shaded {
+	background: #5d1b1b;
+}
+
+.no_bottom_border {
+	border-bottom: 0;
+}
+
+.post.unapproved_post {
+	background: #ffdde0;
+}
+
+.post.unapproved_post .post_author {
+	border-bottom-color: #ffb8be;
+}
+
+.post.classic.unapproved_post .post_author {
+	border-color: #ffb8be;
+}
+
+.post.unapproved_post .post_controls {
+	border-top-color: #ffb8be;
+}
+
+.trow_deleted,
+.post.deleted_post {
+	background: #E8DEFF;
+}
+
+.trow_selected,
+tr.trow_selected td {
+	background: #313c41;
+}
+
+.trow_sep {
+	background: #444;
+	color: #ccc;
+	padding: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	padding: 6px;
+	background: #353535;
+	color: #a0a0a0;
+}
+
+.tfoot a:link, 
+.tfoot a:visited {
+	color: #a0a0a0;
+	text-decoration: none;
+}
+
+.tfoot a:hover,
+.tfoot a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+.bottommenu {
+	background: #efefef;
+	color: #333;
+	border: 1px solid #4874a3;
+	padding: 10px;
+}
+
+.navigation {
+    color: #ccc;
+    font-size: 11px;
+    background: #212735;
+    padding: 5px;
+}
+
+.navigation a:link, .navigation a:visited {
+	text-decoration: none;
+	color:#ccc;
+}
+
+
+
+.navigation a:hover,.navigation a:active {
+	color:#fff;
+	text-decoration: none;
+}
+
+.navigation .active {
+	color: #fff;
+	font-size: 11px;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+fieldset {
+	padding: 12px;
+	border: 1px solid #2e2e2e;
+    margin: 0;
+	margin: 0;
+}
+
+fieldset.trow1,
+fieldset.trow2 {
+	border-color: #2e2e2e;
+}
+
+fieldset.align_right {
+	text-align: right;
+}
+
+input.textbox {
+	background: #353535;
+	color: #ccc;
+	border: 1px solid #353535;
+	padding: 3px 5px;
+	outline: 0;
+	font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+textarea {
+	background: #1f1f1f;
+	color: #ccc;
+	border: 1px solid #2e2e2e;
+	padding: 2px;
+	line-height: 1.4;
+	outline: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font-size: 13px;
+}
+
+select {
+	background: #1f1f1f;
+	padding: 3px;
+	color: #ccc;
+	border: 1px solid #2e2e2e;
+	outline: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font-size: 13px;
+}
+
+button,
+input.button {
+	padding: 5px 8px;
+	cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font-size: 13px;
+	background: #0066a2;
+	color: #fff;
+	outline: 0;
+	border:none
+}
+
+button:hover,
+input.button:hover {
+	background: #444;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input.error, textarea.error, select.error {
+	border: 1px solid #f30;
+	color: #f30;
+}
+
+input.valid, textarea.valid, select.valid {
+	border: 1px solid #0c0;
+}
+
+label.error {
+	color: #f30;
+	margin: 5px;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+form #message {
+	width: 500px;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.post .editor_control_bar {
+	background: #f5f5f5;
+}
+
+.popup_menu {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.popup_menu .popup_item {
+	background: #efefef;
+	color: #333;
+}
+
+.popup_menu .popup_item:hover {
+	background: #0072BC;
+	color: #fff;
+}
+
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CCCCCC;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+img {
+	border: none;
+}
+
+img.attachment {
+	padding: 10px 0;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.hiddenrow {
+	display: none;
+}
+
+.selectall {
+	background: #FFFBD9;
+	border-bottom: 1px solid #F7E86A;
+	color: #333;
+	text-align: center;
+}
+
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+.expcolimage img {
+ 	display:inline-block;
+	width:16px;
+ 	height:auto;
+ 	position:relative;
+}
+
+.tcat_menu > .expcolimage {
+	margin-top: 0;
+}
+
+blockquote {
+	border-left: 3px solid #0066a2;
+	margin: 0;
+	background: #303030;
+	padding: 10px;
+}
+
+blockquote cite {
+	font-weight: bold;
+	border-bottom: 1px solid #404040;
+	font-style: normal;
+	display: block;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	background: #303030;
+	border-left: 3px solid #0066a2;
+	padding: 10px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #404040;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font-size: 13px;
+}
+
+.smilie {
+	vertical-align: middle;
+}
+
+.smilie_pointer {
+	cursor: pointer;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 4px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.user-online { color:#52931c;font-size:11px;}
+.user-offline { color:#b31717;font-size:11px;}
+.user-away { color:#FF5722;font-size:11px;}
+
+.pm_alert {
+	background: #52931c;
+	text-align: center;
+	padding: 8px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.pm_alert i {
+	color:#FFF;
+	margin-top:2px;
+}
+
+.pm_alert i:hover {
+	color:#ccc;
+}
+
+.red_alert {
+	background: #b31717;
+	color: #FFF;
+	text-align: center;
+	padding: 8px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+.pm_alert a:link, .pm_alert a:visited,
+.red_alert a:link,.red_alert a:visited {
+	color:#FFF;
+}
+.pm_alert a:hover, .pm_alert  a:active,
+.red_alert a:hover,.red_alert  a:active  {
+	color: #ccc;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+.imminent_banned {
+	color: #880000;
+}
+
+.high_banned {
+	color: #FF0000;
+}
+
+.moderate_banned {
+	color: #FF6600;
+}
+
+.low_banned {
+	color: #008000;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+div.error {
+	padding: 5px 10px;
+	border: 1px solid #c00;
+	background: rgba(204, 0, 0, 0.15);
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #a0a0a0;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	display: block;
+	color: #C00;
+}
+
+div.error ul {}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination,
+.tcat .pagination {
+	padding-top: 0;
+}
+
+.pagination .pages {
+	font-weight: bold;
+}
+
+.pagination .pagination_current,
+.pagination a {
+	padding: 6px 8px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	background: #353535;
+	color: #CCC;
+}
+
+.pagination .pagination_current {
+	background: #0066a2;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+}
+
+.pagination a:hover {
+	background: #0072BC;
+	color: #fff;
+	border-color: #263c30;
+	text-decoration: none;
+}
+
+.pagination .go_page img {
+	margin-bottom: -4px;
+}
+
+.drop_go_page {
+	background: #f5f5f5;
+	padding: 4px;
+}
+
+.pagination_breadcrumb {
+	background-color: #efefef;
+	border: 1px solid #fff;
+	outline: 1px solid #ccc;
+	padding: 5px;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.thread_legend,
+.thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend,
+.forum_legend dt,
+.forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+#posts_container {
+	padding: 0;
+	background: #262626;
+}
+
+.ignored_post {
+	border-top: 3px solid #333;
+	padding: 15px;
+}
+
+.ignored_post .show_ignored_post {
+	margin-top: -15px;
+}
+
+.ignored_post .show_ignored_post a.button span {
+	background-position: 0 -400px;
+}
+
+.deleted_post_hidden {
+	border-top: 2px solid #ccc;
+	padding: 15px;
+}
+
+.deleted_post_collapsed {
+	border-top: 3px solid #333;
+	padding: 15px;
+}
+
+.deleted_post_collapsed .show_deleted_post {
+	margin-top: -15px;
+}
+
+.deleted_post_collapsed .show_deleted_post a.button span {
+	background-position: 0 -400px;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post.classic {}
+
+.post .post_author {
+	padding: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #2e2e2e;
+}
+
+.post.classic .post_author {
+	float: left;
+	width: 13%;
+	margin: 0;
+	border-right: 1px solid #2e2e2e;
+	padding: 15px;
+}
+
+.post .post_author .buddy_status {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+.post .post_author div.author_avatar {
+	float: left;
+	margin-right: 3px;
+}
+
+.post.classic .post_author div.author_avatar {
+	float: none;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.post .post_author div.author_avatar img {
+	padding: 5px;
+}
+
+.post .post_author div.author_information {
+	float: left;
+	padding: 6px 8px;
+}
+
+.post.classic .post_author div.author_information {
+	float: none;
+	padding: 0;
+	text-align: center;
+}
+
+.post .post_author div.author_statistics {
+	float: right;
+	font-size: 11px;
+	padding: 5px 0;
+	color: #a0a0a0;
+	line-height: 1.3;
+	width: 140px;
+}
+
+.post.classic .post_author div.author_statistics {
+	margin: 0 auto;
+	float: none;
+}
+
+.post .post_head {
+	font-size: 11px;
+	padding: 5px 0;
+	border-bottom: 1px solid #2e2e2e;
+	color: #fff;
+	margin-bottom: 4px;
+}
+
+.post .post_head span.post_date {
+	color: #666;
+}
+
+.post .post_head span.edited_post {
+	font-size: 10px;
+	color: #999;
+}
+
+.post .post_head span.edited_post a {
+	color: #666;
+}
+
+.post_body {
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.post.classic .post_content {
+	float: left;
+	width: 83.2%;
+}
+
+.post_content {
+	padding: 0px 10px;
+}
+
+.post_content .signature {
+	margin-top: 20px;
+	border-top: 1px solid #2e2e2e;
+	padding: 10px 0 4px 0;
+}
+
+.post .post_meta {
+	margin: 4px 0;
+	font-size: 11px;
+	color: #999;
+}
+
+.post .post_meta a:link,
+.post .post_meta a:visited {
+	color: #777;
+}
+
+.post .post_meta a:hover,
+.post .post_meta a:active {
+	color: #777;
+}
+
+.post_controls {
+	clear: both;
+	background: #2e2e2e;
+	padding: 5px;
+	overflow: hidden;
+}
+.postbit_buttons > a:link, .postbit_buttons > a:hover, .postbit_buttons > a:visited, .postbit_buttons > a:active {
+	display: inline-block;
+	padding: 3px 5px;
+	margin: 2px;
+	font-size: 11px;
+	background: #0066a2;
+	color: #FFF;
+}
+.postbit_buttons > a:hover {
+	background: #353535;
+}
+.postbit_buttons a span:before {
+	content: "";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.postbit_buttons a.postbit_find span:before {
+	content: "\f002";
+}
+.postbit_buttons a.postbit_reputation_add span:before {
+	content: "\f067";
+}
+.postbit_buttons a.postbit_email span:before {
+	content: "\f0e0";
+}
+.postbit_buttons a.postbit_website span:before {
+	content: "\f0ac";
+}
+.postbit_buttons a.postbit_pm span:before {
+	content: "\f199";
+}
+.postbit_buttons a.postbit_quote span:before {
+	content: "\f10e";
+}
+.postbit_buttons a.postbit_multiquote span:before {
+	content: "\f055";
+}
+.postbit_buttons a.postbit_multiquote_on span:before {
+	content: "\f056";
+	color: #DB1304;
+}
+.postbit_buttons a.postbit_edit span:before {
+	content: "\f044";
+}
+.postbit_buttons a.postbit_qdelete span:before {
+	content: "\f00d";
+}
+.postbit_buttons a.postbit_qrestore span:before {
+	content: "\f067";
+}
+.postbit_buttons a.postbit_report span:before {
+	content: "\f0a1";
+}
+.postbit_buttons a.postbit_warn span:before {
+	content: "\f0e3";
+}
+.postbit_buttons a.postbit_purgespammer span:before {
+	content: "\f071";
+}
+.postbit_buttons a.postbit_reply_pm span:before {
+	content: "\f112";
+}
+.postbit_buttons a.postbit_reply_all span:before {
+	content: "\f122";
+}
+.postbit_buttons a.postbit_forward_pm span:before {
+	content: "\f064";
+}
+.postbit_buttons a.postbit_delete_pm span:before {
+	content: "\f00d";
+}
+a.button:link, a.button:hover, a.button:visited, a.button:active {
+	background: #0066a2;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 8px;
+	margin: 2px 2px 6px 2px;
+	font-size: 14px;
+}
+a.button:hover {
+	background: #353535;
+  
+}
+a.button.small_button {
+	font-size: 13px;
+	margin: 0;
+	padding: 3px 6px;
+}
+a.button span:before {
+	content: "";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 5px;
+}
+a.button.new_thread_button span:before {
+	content: "\f086";
+}
+a.button.new_reply_button span:before {
+	content: "\f075";
+}
+a.button.closed_button span:before {
+	content: "\f00d";
+}
+a.button.rate_user_button span:before {
+	content: "\f123";
+}
+a.button.add_buddy_button span:before {
+	content: "\f007";
+}
+a.button.remove_buddy_button span:before {
+	content: "\f00d";
+}
+a.button.add_ignore_button span:before {
+	content: "\f1f6";
+}
+a.button.remove_ignore_button span:before {
+	content: "\f0f3";
+}
+a.button.report_user_button span:before {
+	content: "\f0a1";
+}
+
+.quick_jump {
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	margin-top: -3px;
+	border: none;
+}
+
+.pollbar {
+	background: #0066a2;;
+	height: 12px;
+}
+
+.pollbar .percent {
+	display: none;
+}
+
+.posticons_label {
+	white-space: nowrap;
+}
+
+/** jGrowl Start **/
+
+/** Special IE6 Style Positioning **/
+.ie6 {
+	position: absolute;
+}
+
+.ie6.top-right {
+	right: auto;
+	bottom: auto;
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.top-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-right {
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.center {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 100%;
+}
+
+/** jGrowl Styling **/
+.jGrowl {
+	z-index: 9999;
+	color: #ffffff;
+	font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	position: fixed;
+}
+.jGrowl.top-left {
+	left: 0px;
+	top: 0px;
+}
+.jGrowl.top-right {
+	right: 0px;
+	top: 0px;
+}
+.jGrowl.bottom-left {
+	left: 0px;
+	bottom: 0px;
+}
+.jGrowl.bottom-right {
+	right: 0px;
+	bottom: 0px;
+}
+.jGrowl.center {
+	top: 0px;
+	width: 50%;
+	left: 25%;
+}
+
+/** Cross Browser Styling **/
+
+.jGrowl.center .jGrowl-notification,
+.jGrowl.center .jGrowl-closer {
+	margin-left: auto;
+	margin-right: auto;
+}
+.jGrowl-notification {
+	background-color: transparent;
+	opacity: 0.9;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+	zoom: 1;
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	text-align: left;
+	display: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	word-break: break-all;
+}
+.jGrowl .jGrowl-notification {
+	min-height: 40px;
+}
+.jGrowl-notification .ui-state-highlight,
+.jGrowl-notification .ui-widget-content .ui-state-highlight,
+.jGrowl-notification .ui-widget-header .ui-state-highlight {
+	border: 1px solid #000;
+	background: #000;
+	color: #fff;
+}
+.jGrowl-notification .jGrowl-header {
+	font-weight: bold;
+	font-size: .85em;
+}
+.jGrowl-notification .jGrowl-close {
+	background-color: transparent;
+	color: inherit;
+	border: none;
+	z-index: 99;
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+}
+.jGrowl-closer {
+	background-color: #000000;
+	opacity: 0.9;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+	zoom: 1;
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	text-align: left;
+	display: none;
+	border-radius: 5px;
+	word-break: break-all;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center;
+}
+.jGrowl-closer .ui-state-highlight,
+.jGrowl-closer .ui-widget-content .ui-state-highlight,
+.jGrowl-closer .ui-widget-header .ui-state-highlight {
+	border: 1px solid #000;
+	background: #000;
+	color: #fff;
+}
+
+.jGrowl .jGrowl-notification.jgrowl_success {
+    background: #52931c;
+    border: 1px solid #52931c;
+    color: #fff;
+}
+
+.jGrowl .jGrowl-notification.jgrowl_error {
+    background: #b31717;
+    border: 1px solid #b31717;
+    color: #fff;
+}
+
+.jGrowl .jGrowl-notification.jgrowl_process, .jGrowl .jGrowl-closer {
+    background: #FFC107;
+    border: 1px solid #FFC107;
+	color: #fff;
+}
+
+/** Hide jGrowl when printing **/
+@media print {
+	.jGrowl {
+		display: none;
+	}
+}
+
+/** jGrowl End **/
+
+/** Modal Start **/
+
+.modal {
+	display: none;
+	width: 400px;
+	text-align: left;
+	background: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-o-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+
+.modal a.close-modal {
+	position: absolute;
+	top: -12.5px;
+	right: -12.5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(images/close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+	display: none;
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-right: -32px;
+	margin-top: -32px;
+	background: url(images/spinner_big.gif) no-repeat center center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/** Modal End **/
+
+/** Impromptu Start **/
+
+/*! jQuery-Impromptu - v6.2.1 - 2015-05-10
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2015 Trent Richardson; Licensed MIT */
+
+.jqifade{
+	position: absolute;
+	background-color: #777777;
+}
+iframe.jqifade{
+	display:block;
+	z-index:-1;
+}
+div.jqi{
+	width: 400px;
+	max-width:90%;
+    font-family: -apple-system, BlinkMacSystemFont,"Poppins", Lato, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	position: absolute;
+	background-color: #ffffff;
+	font-size: 11px;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 7px;
+}
+div.jqi .jqicontainer{
+}
+div.jqi .jqiclose{
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: default;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+div.jqi .jqistate{
+	background-color: #fff;
+}
+div.jqi .jqititle{
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+div.jqi .jqimessage{
+	padding: 10px;
+	line-height: 20px;
+	color: #444444;
+	overflow: auto;
+}
+div.jqi .jqibuttonshide{
+	display: none;
+}
+div.jqi .jqibuttons{
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+div.jqi .jqibuttons button{
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+	font-size: 12px;
+}
+div.jqi .jqibuttons button.jqidefaultbutton{
+	color: #489afe;
+}
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus{
+	color: #287ade;
+	outline: none;
+}
+div.jqi .jqibuttons button[disabled]{
+	color: #aaa;
+}
+.jqiwarning .jqi .jqibuttons{
+	background-color: #b95656;
+}
+
+/* sub states */
+div.jqi .jqiparentstate::after{
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div.jqi .jqisubstate{
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+div.jqi .jqisubstate .jqibuttons button{
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+.jqi .jqiarrow{ position: absolute; height: 0; width:0; line-height: 0; font-size: 0; border: solid 10px transparent;}
+
+.jqi .jqiarrowtl{ left: 10px; top: -20px; border-bottom-color: #ffffff; }
+.jqi .jqiarrowtc{ left: 50%; top: -20px; border-bottom-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowtr{ right: 10px; top: -20px; border-bottom-color: #ffffff; }
+
+.jqi .jqiarrowbl{ left: 10px; bottom: -20px; border-top-color: #ffffff; }
+.jqi .jqiarrowbc{ left: 50%; bottom: -20px; border-top-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowbr{ right: 10px; bottom: -20px; border-top-color: #ffffff; }
+
+.jqi .jqiarrowlt{ left: -20px; top: 10px; border-right-color: #ffffff; }
+.jqi .jqiarrowlm{ left: -20px; top: 50%; border-right-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowlb{ left: -20px; bottom: 10px; border-right-color: #ffffff; }
+
+.jqi .jqiarrowrt{ right: -20px; top: 10px; border-left-color: #ffffff; }
+.jqi .jqiarrowrm{ right: -20px; top: 50%; border-left-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
+
+/** Impromptu End */
+
+		]]>
+		</stylesheet>
+		<stylesheet name="css3.css" version="1830"><![CDATA[tr td.trow1:first-child,
+tr td.trow2:first-child,
+tr td.trow_shaded:first-child {
+	border-left: 0;
+}
+
+tr td.trow1:last-child,
+tr td.trow2:last-child,
+tr td.trow_shaded:last-child {
+	border-right: 0;
+}
+
+.tborder {
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.tborder tbody tr:last-child > td {
+	border-bottom: 0;
+}
+
+.tborder tbody tr:last-child > td:first-child {
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.tborder tbody tr:last-child > td:last-child {
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.thead {
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.thead_collapsed {
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.thead_left {
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.thead_right {
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.tcat_menu {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {
+	-moz-border-radius-bottomleft: 2px !important;
+	-moz-border-radius-bottomright: 2px !important;
+	-webkit-border-bottom-left-radius: 2px !important;
+	-webkit-border-bottom-right-radius: 2px !important;
+	border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+}
+
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.navigation,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.post.classic .post_author {
+	-moz-border-radius: 0 2px 2px 0;
+	-webkit-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.popup_menu .popup_item_container:first-child .popup_item {
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.popup_menu .popup_item_container:last-child .popup_item {
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.pagination a, .pagination_current {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.pollbar {
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="usefull.css" version="1830"><![CDATA[@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+@import url(https://forum.webgod.ro/uploads/fonts/researcher/researcher.ttf);
+@import url(https://forum.webgod.ro/uploads/fonts/researcher/researcherth.ttf);
+
+@import url(https://forum.webgod.ro/uploads/fonts/rowdie/rowdieb.ttf);
+@import url(https://forum.webgod.ro/uploads/fonts/rowdie/rowdier.ttf);
+@import url(https://forum.webgod.ro/uploads/fonts/rowdie/rowdierl.ttf);
+
+@import url(https://forum.webgod.ro/uploads/fonts/rubik/rubik.ttf);
+
+
+
+
+@font-face {
+	font-family: Rubik;
+	src: url(https://forum.webgod.ro/uploads/fonts/rubik/rubik.ttf);
+}
+
+
+
+@font-face {
+	font-family: Rowdieb;
+	src: url(https://forum.webgod.ro/uploads/fonts/rowdie/rowdieb.ttf);
+}
+
+@font-face {
+	font-family: Rowdier;
+	src: url(https://forum.webgod.ro/uploads/fonts/rowdie/rowdier.ttf);
+}
+
+@font-face {
+	font-family: Rowdiel;
+	src: url(https://forum.webgod.ro/uploads/fonts/rowdie/researcher.ttf);
+}
+
+
+@font-face {
+	font-family: Researcher;
+	src: url(https://forum.webgod.ro/uploads/fonts/researcher/researcher.ttf);
+}
+
+
+
+@font-face {
+	font-family: ResearcherTH;
+	src: url(https://forum.webgod.ro/uploads/fonts/researcher/researcherth.ttf);
+}
+
+.dropdown-content123:before {
+    content: '';
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 13px solid rgb(46 57 76);
+    z-index: 111111111111111111111111111;
+    position: absolute;
+    right: 20px;
+    top: -12px;
+}
+.wiadomosci_title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 150px;
+    background-color: #2e394c;
+    top: -19px;
+    position: relative;
+    border: 1px solid #2e394c;
+    border-radius: 4px;
+}
+
+
+#hb_title {
+    /* color: #212735; */
+    font-size: 80px;
+    position: relative;
+    font-family: 'Rowdieb';
+    left: auto;
+    top: 40px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00000000;
+    background-image: -webkit-linear-gradient(80deg, #111419 34%, #3694de 59%);
+    text-transform: uppercase;
+    font-weight: 900;
+    /* background-image: url(https://i.imgur.com/0VAm0aK.png); */
+}
+
+
+#hb_desc {
+    font-size: 18px;
+    text-align: left;
+    font-family: Source Sans Pro;
+}
+#contentmainusermenu {
+  display: none;
+}
+
+.dropbtn {
+    background-color: #212735;
+    /* color: white; */
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    /* border: none; */
+    /* cursor: pointer; */
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #262f3f;
+    min-width: 210px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    color: #9da5b3;
+}
+
+.dropdown-content a {
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {
+    background-color: #ddd0;
+    border: 1px solid #0066a29c;
+    border-radius: 4px;
+    padding: 10px;
+}
+.show {
+    display: block;
+    /* padding: 20px; */
+    min-width: 700px;
+    min-height: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.dropdowntop {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    height: 310px;
+    padding: 10px;
+}
+.bgtopmenublue {
+    background-image: url(https://i.imgur.com/0VAm0aK.png);
+    background-repeat: repeat;
+    position: relative;
+    background-color: #101318;
+}
+
+.bluemenubartop {
+    display: flex;
+    width: 81%;
+    height: 70px;
+    background-image: url(https://i.imgur.com/0VAm0aK.png);
+    background-repeat: repeat;
+    position: relative;
+    padding: 15px 35px;
+    background-color: #101318;
+    margin: auto;
+    /* background: #0d6fb5; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+
+.bluemenubartopmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.menurighttopblue {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menulefttopblue {
+    width: 5%;
+}
+
+
+.headermenuficons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.bluemenualink {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    padding: 9px;
+    color: #c2dbec;
+	 border-radius: 3px;
+}
+
+
+.bluemenualink:hover {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    padding: 9px;
+    color: #c2dbec;
+    background: #c2dbec36;
+    border-radius: 3px;
+}
+
+
+.headwelcomeblmember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.dropdownbottom {
+    height: 100px;
+    border-top: 1px solid #2e394c;
+    background: #2e394c;
+    padding: 15px 30px;
+}
+
+
+.underflexmenu {
+    display: flex;
+    background: #212735;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 7px;
+}
+
+
+.bgnavigationmenu {
+    background: #212735;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.mr-2, .mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+
+.menulinkicon {
+    font-size: 1.6rem;
+    margin-right: 10px;
+    width: 20%;
+    text-align: -webkit-center;
+}
+
+.menulinkstructure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* border: 1px solid #2e394c; */
+    padding: 17px 7px;
+}
+.menulinknamedescript {
+    width: 80%;
+}
+
+.dropdownleft {
+    width: 49%;
+}
+
+.dropdownright {
+    width: 49%;
+}
+
+
+
+.dropbutttonns {
+    background-color: #0066a200;
+    color: white;
+    padding: 9px;
+    font-size: 13px;
+    border: none;
+    border-radius: 100%;
+}
+
+
+button:hover, input.button:hover {
+    opacity: 90%;
+    background: #0d6fb5;
+}
+
+.dropmenud-content {
+    display: none;
+    position: absolute;
+    background-color: #262f3f;
+    min-width: 200px;
+    min-height: 180px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    color: white;
+    margin-top: 0px;
+    border-radius: 4px;
+    margin-left: -144px;
+}
+
+
+
+.dropdownmenufull {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+.dropdownmenufull {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropmenud-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropmenud-content a:hover {background-color: #0066a200;}
+
+.dropdownmenufull:hover .dropmenud-content {display: block;}
+
+.dropdownmenufull:hover .dropdownmenufull {background-color: #3e8e41;}
+
+
+
+
+.firstlinkmenu:hover {
+     background-color: #ffffff;
+}
+
+
+.menudesctop {
+    font-size: 11px;
+    color: #9da5b3;
+    font-weight: 600;
+}
+.menulinknames {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+.texttitledrp2bot {
+    text-align: start;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d6fb5;
+}
+
+
+.contentdrp2bot {
+    text-align: start;
+    margin-left: 19px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+
+ .item-icon {
+    height: 32px;
+    width: 32px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.ml-3, .mx-3 {
+    margin-left: 1rem !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+
+#logodiv {
+    position: relative;
+    margin: 20px auto;
+    width: 35%;
+    padding-bottom: 7%;
+    background-color: #161a21;
+    border: 7px solid #212735;
+    text-align: center;
+}
+
+#logodiv:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    border: 7px solid #161a21;
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+}
+
+
+
+
+.testlogomiddle {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+
+.dropdown123 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn123 {
+    color: white;
+    padding: 17px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+span.liczba-wiado-folder {
+    vertical-align: super;
+    position: absolute;
+    font-size: 10px;
+    margin: 3px -6px;
+    background: linear-gradient(0.3turn, #212735, #161a21, #212735) !important;
+    z-index: 9999;
+    /* padding: 3px 8px; */
+    border-radius: 30px;
+    line-height: 16px;
+}
+
+.show123 {
+    display: block;
+}
+
+.show123 {
+    display: block;
+}
+
+h1.napis_title_wiad {
+    float: left;
+    color: #888b98;
+    text-transform: uppercase !important;
+    font-weight: bolder !important;
+    font-size: .8rem;
+    /* flex: 1 1 auto !important; */
+}
+
+a#button-nowa-wiadomosc {
+    float: right;
+    color: #a1b0c1;
+    background-color: #39465d;
+    border-color: #39465d;
+    margin: -4px 0px;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.text-pad-add {
+    padding: 10px;
+    position: absolute;
+}
+
+.overflow-wiado {
+    height: 100px;
+    float: left;
+    width: 100%;
+    border-radius: 4px;
+    background: #262f3f;
+    top: 81px;
+    position: inherit;
+    border: 1px solid #2e394c;
+    box-shadow: 0px 8px 16px 0px rgb(22 26 33 / 27%);
+}
+
+.uptodate {
+    position: absolute;
+    top: 61%;
+    left: 35%;
+}
+.smalltext {
+    font-size: 11px;
+}
+.emote-happ {
+    position: absolute;
+    top: 30%;
+    font-size: 3.5rem;
+    left: 41.7%;
+    align-items: center !important;
+}
+
+
+
+
+
+
+.linknavibargg {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    font-weight: 400;
+    margin-right: 25px;
+}
+
+
+
+.undermenunaviright {
+    display: flex;
+    align-items: center;
+}
+
+
+#logo {
+    background: #161a21;
+    padding: 10px 0;
+    border-bottom: 1px solid #161a21 !important;
+}
+
+
+
+
+
+
+]]>
+		</stylesheet>
+		<stylesheet name="new.css" version="1830"><![CDATA[.floatleftstar {
+    float: left;
+   font-size: 13px;
+    background: #161a21;
+    padding: 4px;
+    border-radius: 29px;
+}
+
+.head-info {
+    top: 25%;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    margin-bottom: -45px;
+}
+
+.floatrightstar {
+    float: right;
+   font-size: 13px;
+    background: #161a21;
+    padding: 4px;
+    border-radius: 29px;
+}
+
+
+
+.padright {
+    padding-right: 10px;
+}
+
+.flex-box-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    width: 87%;
+    height: 114px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+span.liczba-wiado-folder {
+    vertical-align: super;
+    position: absolute;
+    font-size: 10px;
+    margin: 3px -6px;
+    background: linear-gradient(0.3turn, #212735, #161a21, #212735) !important;
+    z-index: 9999;
+    /* padding: 3px 8px; */
+    border-radius: 30px;
+    line-height: 16px;
+}
+
+img.enmenu-img {
+    height: 24px;
+    width: 24px;
+    border-radius: 333px;
+    margin: -7px 3px;
+    position: relative;
+    margin-left: 15px;
+    border: none;
+}
+img.enmenu-img:before {position:absolute; content:''; background:url(../../../images/red/avatardomyslny.png);left:0;top:0;width:24px;height:24px;border-radius:333px;z-index:-1;border:none;}
+.panel_user {
+    float: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin-top: -20px;
+    background: #212735 !important;
+    border-bottom: 1px solid #0d6fb5;
+    filter: blur(0px);
+    height: 32px;
+}
+.dropbtn {
+    color: white;
+    padding: 10px 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin-right: -2px;
+}
+
+
+.dropdown-content123 {
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    /* background-color: #2e394c; */
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 29%); */
+    z-index: 1;
+    padding: 20px 20px;
+    right: -17px;
+    top: 61px;
+    z-index: 9999999;
+    border-radius: 4px;
+    overflow: inherit;
+}
+
+
+.uptodate {
+    position: absolute;
+    top: 61%;
+    left: 35%;
+}
+
+.text-pad-add {
+    padding: 10px;
+    position: absolute;
+}
+
+
+.emote-happ {
+    position: absolute;
+    top: 30%;
+    font-size: 3.5rem;
+    left: 41.7%;
+    align-items: center !important;
+}
+
+.dropdown-content123:before {
+    content: '';
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 13px solid rgb(46 57 76);
+    z-index: 111111111111111111111111111;
+    position: absolute;
+    right: 20px;
+    top: -12px;
+}
+.wiadomosc_wysuwanybox {
+    float: left;
+    width: 100%;
+    display: block;
+    margin: 5px 0px;
+    border-bottom: 2px solid #282931;
+    padding-bottom: 10px;
+    color: #888b98;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #23242a;
+}
+img#avatar_last_wiadomosci {
+    width: 35px;
+    height: 35px;
+    border-radius: 68px;
+    border: 2px solid #23242a;
+}
+.show {display: block;}
+.show123 {display: block;}
+
+.flex-box-bottom-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    width: 87%;
+    height: 78px;
+}
+ul.menu-nav-box {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul.menu-nav-box a {
+    margin-right: 10px;
+    padding: 12.5px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    background: linear-gradient(0.3turn, #2b2b2b38, #2a2727, #2a282800) !important;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #1213172b;
+    font-size: 12px;
+    font-weight: 500;
+}
+.pm_alert {
+    background: #262f3f;
+    border: 1px solid #262f3f;
+    text-align: center;
+    padding: 11.25px 20px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 4px;
+}
+.pm_alert a { color:#fff;}
+
+
+.right-ppp {
+    float: right;
+}
+
+
+.times-pmalert {
+    font-size: 31px;
+    position: absolute;
+    margin: -7px -30px;
+    color: white;
+    background: #161a21;
+    padding: 0px 12px;
+    border-radius: 4px;
+}
+
+.panel-boczny {
+    flex-basis: 400px;
+    margin-left: 40px;
+}
+.panel-boczny-s {
+    margin-bottom: 40px;
+    background: hsl(230deg 14% 6%);
+    border-radius: 13px;
+}
+.forum {
+    position: relative;
+    border-radius: 8px;
+    float: left;
+    width: 75%;
+    background: #262f3f;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+span.myNumber.myNumber--medium {
+    background: #2127357d;
+    min-width: 60px;
+    text-align: center;
+    padding: 0px 0px;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10px 37px;
+    border-bottom: 1px solid #262f3f;
+    border-radius: 13px;
+    color: #9da5b3;
+    font-weight: 500;
+    font-weight: 800;
+}
+
+.text-panelboczny {
+    color: #8d97a6;
+    background-size: 100% 100%;
+    padding: 15px 22px;
+    overflow: hidden;
+}
+.title-panel-boczny {
+    padding: 20px 25px;
+    font-size: 13px;
+    color: #8d97a6;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.statystyki_bottom {
+    background: #0d0e11;
+    padding: 20px 0px;
+    border-radius: 13px;
+    min-height: 127px;
+    margin: 25px 0px;
+}
+.stopka {
+    background: #0d6fb5;
+    height: 70px;
+    border-bottom: 1px solid #121317;
+}
+
+		
+		
+.text-perform-red {
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-weight: 500;
+	 margin-bottom: 5px;
+}		
+		
+		
+		
+.text-perform-purple {
+    background: #9333ea;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-weight: 500;
+	 margin-bottom: 5px;
+	height: 23px;
+	margin-right: 10px;
+}		
+		
+		
+		
+.text-perform-discord {
+    background: #5865f2;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-weight: 500;
+	 margin-bottom: 5px;
+	margin-right: 0px;
+}		
+		
+		
+		
+.text-perform-orange {
+    background: #d26d22;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-weight: 500;
+	 margin-bottom: 5px;
+		margin-right: 10px;
+}		
+		
+		
+		
+.text-perform {
+    background: #9333ea;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-weight: 500;
+	 margin-bottom: 5px;
+	margin-right: 10px;
+}		
+		
+		
+.sidebarblock {
+    background-color: #262f3f;
+    height: 250px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+	
+
+
+
+.readbeforethread {
+    padding: 10px;
+    height: auto;
+    background-color: #212735;
+    border-radius: 5px;
+    color: white;
+ 
+	margin-bottom: 7px !important;
+}
+
+
+
+.warningstyle {
+    background: #d26d22;
+    width: 35px;
+    height: 25px;
+    align-items: center !important;
+    text-align: -webkit-center;
+    font-size: 1rem;
+    padding-top: 9px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.flex-deflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}]]>
+		</stylesheet>
+		<stylesheet name="flexforums.css" version="1830"><![CDATA[.subforums, .forums {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.forumsresponsive {
+    background-image: url(https://i.imgur.com/0VAm0aK.png);
+    background-repeat: repeat;
+    position: relative;
+    padding: 15px 35px;
+    background-color: #101318;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.fontforumtitle {
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Titillium Web';
+}
+
+.categorynameforum {
+    border-radius: 5px;
+    padding: 15px;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #cbd3df;
+    font-family: 'Researcher';
+    font-size: 15px;
+}
+
+.subforumsflexy {
+    /* background: #212735; */
+    /* margin: 10px 10px 30px 10px; */
+    /* padding: 20px 20px; */
+    border-radius: 5px;
+}
+
+
+.flexyforumsd2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    background-image: -webkit-linear-gradient(261deg, #161a21 7%, #161a21 48%, #101318 84%);
+    border-bottom: 0px solid #1f385b;
+    align-content: center;
+    margin-bottom: 10px;
+    /* background: #161a21; */
+    padding: 0px 2px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 0px #000000;
+}
+
+
+.avatarep_img, .avatarep_bg {
+    /* padding: 10px !important; */
+    /* border: 5px solid #212735 !important; */
+    /* width: 50px !important; */
+    /* height: 50px !important; */
+    border-radius: 100px !important;
+    opacity: 0.9 !important;
+    margin: 0px -42px !important;
+    float: left !important;
+    /* background: #0e121b; */
+}
+
+.d2forumicons {
+    display: block;
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+    margin: 10px;
+    align-items: center;
+    background: #141825;
+    background-position: center;
+    border: 1px solid #1f2330;
+    border-radius: 100px;
+}
+
+.d2foruminame {
+    width: 55%;
+    margin: 10px;
+}
+
+
+
+.threads2dposts {
+    width: 10%;
+    text-align: end;
+    margin-right: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    opacity: 87%;
+    text-shadow: -1px -2px 20px #17191b;
+    border-right: 1px solid #2e394c;
+    padding-right: 12px;
+}
+
+
+.dflexpos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 35px;
+    background: #131518;
+    border-radius: 10px;
+}
+
+.d2lastposts {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+
+.flexylastpost {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* padding: 15px; */
+    text-align: start;
+}
+
+.threadname {
+    width: 75%;
+    font-style: oblique;
+}
+
+
+
+.avatarepposition {
+    width: 10%;
+}
+
+
+
+.forumtitleind {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+
+.forumdescriptionsmall {
+    font-family: 'lato', sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    margin: 10px;
+    color: #a0a2a7;
+}
+
+.d2subforums {
+    margin-top: 5px;
+    font-size: 11.6px;
+}
+
+
+
+
+
+.lastposttitlefl {
+    font-weight: 500;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* font-family: 'Poppins'; */
+    font-size: 14px;
+    color: #ffffff;
+    /* letter-spacing: 0.6px; */
+    font-style: normal;
+    text-shadow: 0px 0px 2px black;
+}
+
+
+.bylang {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12.5px;
+    /* margin-right: 8px; */
+    color: #828282;
+    font-style: normal;
+}
+
+
+
+.dateofposting {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-style: initial;
+}
+
+.subforum_minioff {
+    background-position: 0 -10px;
+    margin-right: 6px;
+}
+
+.forumnamedisplay {
+    background: #262626;
+    padding: 10px;
+    min-height: 120px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, #2e2e2e 0%, #1e1e1e69 100%);
+    border-left: 1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.hr {
+    color: #18191b;
+    background: #2e2e2e !important;
+}
+
+.forumdisplaysubf {
+    background: #181818;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+
+
+.threadlistbodyflex {
+    display: flex;
+    padding: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    background: #18191b;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    align-content: space-around;
+    align-items: center;
+}
+
+
+.startthreadlist {
+    margin-left: 10px;
+    width: 10%;
+}
+
+
+.secondthreadlist {
+    width: 65%;
+    font-style: italic;
+}
+
+.middlethreadlist {
+    width: 15%;
+}
+
+.endthreadlist {
+    width: 20%;
+}
+
+
+.threadpref {
+    background: #106ebe;
+    padding: 3px 9px;
+    border-top: 1px solid #6eaae7;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 10px;
+}
+
+
+
+
+.titlethreadss {
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    color: #9bcaf9;
+    letter-spacing: 0.6px;
+}
+
+
+
+
+
+.threadoslastpost {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* padding: 15px; */
+    text-align: start;
+}
+
+
+
+.avatarep_img, .avatarep_bg {
+    border: 7px solid #161b27 !important;
+    border-radius: 100px !important;
+}
+
+
+
+
+.forumsusernameaaa {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #3986e6, #39c4f2);
+    font-size: 23px;
+    font-family: 'Titillium Web';
+}
+
+
+
+.ftz20px {
+    font-size: 23px;
+    font-family: 'Titillium Web';
+}
+
+
+
+.textinainteforums {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+}
+
+.rightylefty {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.btn1 {
+    /* background-image: linear-gradient(45deg, #3986e6, #39c4f2); */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+    border: 1px solid #212735;
+    margin-right: 10px;
+}
+
+
+
+
+.btn2 {
+    background-image: linear-gradient(45deg, #3986e6, #39c4f2);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+
+.maingradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #3986e6, #39c4f2);
+}
+
+
+
+.buttonssidebarhide {
+    float: right;
+    position: relative;
+    right: 6px;
+    margin-right: -10px;
+    margin-left: 35px;
+    /* background: #21242900; */
+    /* padding: 5px 0px; */
+    border-radius: 4px;
+}
+
+.upgradeblockindex {
+    text-align: center;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(45deg, #12151a 7%, #399cea 48%, #101318 84%);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.textlinkupg {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(45deg, #161616 48%, #ffffff 55%, #313131 68%);
+}
+
+
+.descriptionupgrade {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Inter';
+}
+
+
+
+
+
+
+
+
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="sense.css" version="1830"><![CDATA[/***
+2022   MYBB TEMPLATE THEMES STYLES
+CODER # WRITTER > DANN!EL # LeyNAD
+***/
+
+
+
+
+@import url(https://forum.webgod.ro/images/fonts/inter.ttf);
+@import url(https://forum.webgod.ro/images/fonts/inter.ttf);
+
+
+
+@font-face {
+	font-family: Inter;
+	src: url(https://forum.webgod.ro/images/fonts/inter.ttf);
+}
+
+
+
+@font-face {
+	font-family: ResearcherTH;
+	src: urlhttps://code.playtv.ro/utilites/fonts/researcher/researcherth.ttf);
+}
+
+
+
+
+
+
+
+.subforumicon {
+    height: 7px !important;
+    width: 7px !important;
+    display: inline-block !important;
+    margin: 0 5px !important;
+    cursor: pointer !important;
+    background: #4079b2 !important;
+    border-radius: 100px !important;
+    border: 4px solid #4079b2 !important;
+    border-style: double !important;
+}
+
+
+.columns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.columns li 
+{
+width: 33%; 
+float: left;
+}
+
+
+.sidebarucpregister {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    width: 203px;
+    top: 6%;
+    background: linear-gradient(88deg, rgb(33 36 41) 0%, rgb(23 25 27) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    box-shadow: -4px 5px 0px 0px rgb(112 111 111 / 35%);
+}
+
+
+
+
+#search {
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+    vertical-align: middle;
+    max-width: 260px !important;
+    float: right;
+    position: absolute;
+    right: 249px;
+    width: 260px;
+    border-radius: 5px;
+    background: #4a5663;
+    height: 40px;
+    /* border: 1px solid #5e5b60; */
+    /* border-style: inset; */
+}
+
+
+.footertips {
+    padding: 20px 5px;
+    margin: 5px;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    background: #227ee31a;
+    border-radius: 5px;
+    height: 20px;
+    align-items: center;
+    font-size: 11px;
+    color: white;
+    box-shadow: -2px 4px 0px 0px rgb(36 110 200 / 19%);
+}
+
+.faiconsreg {
+    background: rgb(96,165,250);
+    margin: 0px 5px 0 0px;
+    background: -webkit-linear-gradient(0deg, #3bcd70 10%, #26b55a, #27b65b) !important;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.textboxsearch  {
+    color: #ffffff;
+    width: 260px;
+    border-radius: 5px !important;
+    height: 44px;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 0;
+    font-family: Selawik, sans-serif;
+    font-size: 15px;
+    background: rgb(70,83,96);
+    background: linear-gradient(179deg, #505d69, #4b5864 ,#45525f ) !important;
+}
+
+
+
+input.placeholder  {
+    color: #ffffff;
+}
+
+
+.wrapper {
+    width: 85% !important;
+    margin: auto auto;
+}
+
+.logotitle {
+    margin-top: 30px;
+    margin-left: -11px;
+    /* background: #212429; */
+    width: 271px;
+    padding: 15px 35px;
+    border-radius: 100px;
+    /* border-radius: 100px 0px 100px 0px; */
+    height: 110px;
+}
+
+.logofirst {
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff63;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(45deg, #282727 10%, #fbfbfb);
+}
+
+
+.secondlogo  {
+    color: #f7a12a;
+    text-shadow: 0 0 20px #f7a12a;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+
+.logodescription {
+    color: white;
+    text-shadow: 0 0 2px white;
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.activelimenu {
+    background: #b9b6b614;
+    border-radius: 4px;
+}
+.navigation-menuheader {
+    display: flex;
+    max-width: 100% !important;
+    background-image: linear-gradient(45deg, #1760bb,#246cc5, #208eff);
+    height: 70px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-shadow: inset rgb(255 255 255 / 20%) 0px 1px 0px, rgb(0 0 0 / 40%) 0px 1px 3px;
+    border-radius: 4px;
+    text-shadow: rgb(0 0 0 / 60%) 0px 1px 2px;
+    padding: 0 10px;
+}
+
+
+.navimenuheader {
+    display: flex;
+    max-width: 100% !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.rightlinkssocilal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+
+.sociallinksstyle {
+    padding: 20px;
+    /* margin-right: 20px; */
+    height: 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    /* background: #ffffff0f; */
+}
+
+.linkheadmenu {
+    /* margin-right: 20px; */
+    /* background: linear-gradient(359deg, #212429 50%,#23262b 50% ) !important; */
+    padding: 15px 15px;
+    /* border-top: 1px solid #494b4f; */
+    text-align: center;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    /* border-left: 1px solid #313439; */
+    /* border-right: 1px solid #313439; */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 0 0 0px #ffffff91;
+}
+
+.linkheadicon {
+    margin: -35px 30px;
+    color: white;
+    font-size: 20px;
+    background: #0e121b;
+    padding: 12px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.linkheadicon:hover {
+    margin: -35px 30px;
+    color: #38a1eb;
+    font-size: 20px;
+    background: #0e121b;
+    padding: 12px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-shadow: 0 0 7px #39a2ec;
+}
+
+
+
+
+
+
+
+
+.sideblock {
+    background: #121721;
+    padding: 12px;
+    background-image: url(https://i.imgur.com/0VAm0aK.png);
+    background-repeat: repeat;
+    position: relative;
+    background-color: #101318;
+    border-radius: 10px;
+}
+
+.sideblockcontent {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(45deg, #161a21, #161a21);
+    margin-bottom: 10px;
+    /* border-top-right-radius: 50%; */
+    /* border-bottom-right-radius: 50%; */
+}
+
+.poststinsidebar {
+    width: auto;
+    /* background: #26262600; */
+    border-radius: 100px;
+    padding: 4px 6px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.sideblockcontentleft {
+float:left;
+}
+.sideblockcontentright {
+float:right;
+}
+
+
+.sideblockhead {
+    background-repeat: repeat;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(-95deg, #161a21 7%, #161a21 48%, #101318 84%);
+    padding: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #307cb8;
+}
+
+
+
+.last-postindex {
+    display: flex;
+    justify-content: flex-start;
+	text-align: start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 225px;
+    width: 225px;
+    float: right;
+    padding: 0px 0px;
+    background: #17191b;
+    height: 70px;
+    border-radius: 180px 0px 93px 0px;
+    margin-right: 20px;
+    box-shadow: -4px 6px 0px 0px rgb(112 111 111 / 12%);
+}
+
+
+
+.navigation-socialbuttons{
+    float: right;
+    margin-top: 112px;
+    margin-right: 400px;
+}
+
+.linkheadsocialb {
+
+margin-right: 20px; background: linear-gradient(359deg, #212429 50%,#23262b 50% ) !important; padding: 15px 15px; border-top: 1px solid #494b4f; height: 60px; font-family: 'Poppins', sans-serif; border-top-left-radius: 5px; border-top-right-radius: 5px; color: #c1c1c1; border-left: 1px solid #313439; border-right: 1px solid #313439; font-size: 13px; text-transform: uppercase; font-weight: 600; 
+	
+}
+
+
+
+
+
+.forumstatsdown {
+    display: flex;
+    background: #161b27;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.statsdownbody {
+    background: #1a1f2c;
+    padding: 10px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.statsdownhead {
+    background: #0e121b;
+    border-top: 1px solid #0e121b;
+    border-radius: 50px 50px 0px 0px;
+    height: 25px;
+    text-align: center;
+    width: 150px;
+}
+.statsdowncontent {
+    background: #0e121b;
+    border-top: 1px solid #0e121b;
+    border-radius: 0px 0px 50px 50px;
+    height: 25px;
+    text-align: center;
+    width: 150px;
+}
+
+.footer-infox {
+    background: #121721;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.icon-position {
+    background: -webkit-linear-gradient(149deg, #4079b2 10%, #04375a, #4590db) !important;
+    height: 45px;
+    /* background-image: url(https://i.imgur.com/rhoVXcO.png) !important; */
+    padding: 30px;
+    width: 238px;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    position: relative;
+    margin: 0px -32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ceiconinfox{
+    font-size: 25px;
+    position: absolute;
+    margin: -21px -21px;
+    color: #ffffff54;
+    background: #121317;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+.textfooterinfo {
+    margin-left: 50px;
+ 
+}
+
+
+.footercopyright {
+    margin-top: 50px;
+    background: #121924;
+    padding: 20px;
+}
+
+
+.header {
+    /* height: 200px; */
+}
+
+
+.logobg {
+    /* background-color: #0e121b; */
+    /* background-repeat: no-repeat !important; */
+    /* animation: animatedBackground 30s linear infinite alternate; */
+    /* background-size: contain !important; */
+    /* background-position-y: 43% !important; */
+    /* background-position: bottom !important; */
+    /* background-position-x: center; */
+    /* background-repeat: repeat-x !important; */
+    /* animation: animatedBackground 30s linear infinite alternate !important; */
+}
+
+
+
+
+
+
+.sidebar {
+    width: 19%;
+    margin-left: 10px;
+    float: right;
+    /* margin-top: 50px; */
+}
+
+.sidebarucp {
+    position: fixed;
+    right: -70px;
+    z-index: 1;
+    width: 203px;
+    top: 33%;
+    background: linear-gradient(88deg, rgb(33 36 41) 0%, rgb(23 25 27) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    box-shadow: -4px 5px 0px 0px rgb(112 111 111 / 35%);
+}
+
+
+
+.moderationbuttons {
+    position: fixed;
+    left: -46px;
+    border-right: 1px solid #3998e9;
+    z-index: 1;
+    top: 47%;
+    background: linear-gradient(274deg, #141924 0%, #0f131d 100%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 7px 5px 0px 0px rgb(22 27 39);
+}
+
+
+
+
+
+.rightsearchbar {
+    background: #0e121b;
+    padding: 12px;
+    background-image: url(https://i.imgur.com/0VAm0aK.png);
+    border-radius: 1px;
+    min-width: 200px;
+    text-align: start;
+    box-shadow: inset 0 0 2px #13171f;
+    margin-top: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #cecfd096;
+    cursor: pointer;
+    font-family: 'Poppins';
+    letter-spacing: 4px;
+}
+
+
+
+.searchicontophead {
+    padding: 8px;
+    background: #1f3a5e;
+    width: 28px;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.exeinfo {
+    background-color: #3498db;
+    /* height: 20px; */
+    width: 200px;
+    color: #fff;
+    border: 9px solid #3498db;
+    margin-left: -4px;
+    border-radius: 3px;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+.exeinfo_kutu{
+	background-color:#2980b9;
+	width:15px;
+	height:20px;
+	float:left;
+}
+.exeinfo_sagucgen{
+    background-color:#2980b9;
+    height:20px;
+	width:70px;
+	float:right;
+	 -webkit-clip-path: polygon(61% 0, 100% 0%, 100% 100%, 45% 100%);
+	 clip-path: polygon(61% 0, 100% 0%, 100% 100%, 45% 100%);
+}
+.exeinfo2 {
+    height: 49px;
+    width: 82px;
+    margin-left: 10px;
+    background-color: #2c3e50;
+    border-bottom: 2px solid #202f3e;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+
+
+.exepostbitkutu {
+    width: 190px;
+    height: 35px;
+    line-height: 25px;
+    background-color: #17191b;
+    border-bottom: 2px solid #3498db;
+    float: left;
+    color: #fff;
+    margin-left: 0px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 0%);
+}
+
+
+
+
+
+.memberprofilesignature {
+    height: 200px;
+    border: 10px solid #212429;
+    padding: 10px;
+    background-image: url(https://i.imgur.com/qWmrlm3.jpg) !important;
+    background-repeat: repeat-x !important;
+    animation: animatedBackground 30s linear infinite alternate;
+    background-size: 292%;
+    background-position-y: -33% !important;
+    /* background-position: bottom !important; */
+    background-position-x: 51%;
+}
+
+
+.memberprofilehead {
+    background: #17191b;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border-bottom: 65px solid #17191b;
+}
+
+
+
+
+.memberprofileavatar {
+    width: 120px;
+    height: 120px;
+    background: #17191b;
+    position: relative;
+    margin: -37px 7px;
+    padding: 0px;
+    border-radius: 100px;
+    border: 10px solid #17191b;
+}
+
+.memberprofileonstatus {
+    margin: -23px 0px;
+    text-transform: uppercase;
+    font-style: italic;
+    /* position: absolute; */
+    padding: 4px;
+    z-index: 1;
+    font-size: 10px;
+    width: max-content;
+}
+
+
+.memberprofileinfo {
+    background: #17191b;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    margin: 27px 180px;
+    z-index: 1;
+    padding: 15px;
+    width: 68%;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+
+.nameprofilemem {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -50px;
+    font-size: 14px;
+    background: #212429;
+    border-radius: 0px 0px 20px 20px;
+    padding: 31px 20px;
+    height: 50px;
+    min-width: 65px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.memprofbuttons {
+    float: right;
+    position: relative;
+    margin: -50px 0px;
+    background: #212429;
+    padding: 18px;
+    border-radius: 0px 0px 20px 20px;
+    height: 59px;
+}
+
+
+
+
+.mobileuserbar	 {
+    display: none;
+	}
+
+
+
+.header-avatars {
+    border-radius: 3px;
+    margin: -10px;
+    width: 70px;
+    height: 70px;
+    box-shadow: inset rgb(255 255 255 / 20%) 0px 1px 0px, rgb(0 0 0 / 40%) 0px 1px 14px;
+    border: 1px solid #262626;
+}
+
+.iconsafterlog:hover {
+    background-image: linear-gradient(45deg, #0e121b, #171c28);
+    padding: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+      margin-top: -10px;
+    height: 50px;
+    margin-bottom: 3px;
+    color: #ffffff;
+	cursor:pointer;
+}
+
+.afterloginmempanel {
+    display: flex;
+    position: absolute;
+    float: right;
+    padding: 18px;
+    text-align: center;
+    margin-top: 14px;
+    margin-right: 0px;
+    right: 150px;
+    width: 500px;
+    height: 86px;
+    background: rgb(14,18,27);
+    /* background: linear-gradient(0deg, rgba(14,18,27,1) 28%, rgba(57,179,239,1) 52%); */
+    background-image: linear-gradient( #0e121b 0%, rgb(14 18 27) 100%);
+    box-shadow: inset rgb(255 255 255 / 20%) 0px 1px 0px, rgb(0 0 0 / 40%) 0px 1px 14px;
+    border-radius: 4px;
+    text-shadow: rgb(0 0 0 / 60%) 0px 1px 2px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    border-top: 1px solid #39baf0;
+    border-bottom: 1px solid #171c28;
+}
+
+.iconsafterlog {
+    background-image: linear-gradient(45deg, #3986e6, #39c4f2);
+    padding: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: -10px;
+    height: 50px;
+    margin-bottom: 3px;
+}
+
+
+.reductionprice {
+    /* background: #161b27; */
+    padding: 10px 150px;
+    width: 100%;
+    text-align: center;
+    border-top: 4px solid #3998ea;
+    border-bottom: 1px solid #212326;
+    background-image: linear-gradient(to bottom, #3e4048 0%, #0e121b 100%);
+    border-bottom: 1px solid #1e232e;
+    font-size: 12px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+
+
+.onlyfontsize {
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.numcounttopprof {
+    font-size: 13px;
+    font-weight: 600;
+    background: #171c287d;
+    padding: 10px;
+}
+
+.flexymenuaftloguser {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    width: 55%;
+}
+.namemembers {
+    margin-top: 6px;
+    margin-right: -10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+.logocon {
+    color: white !important;
+    margin: 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 12px;
+    min-width: 110px;
+    font-weight: 600;
+    background-image: -webkit-linear-gradient(45deg, #181818 62%, #218af8 88%, #181818 84%);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 7px 0px black;
+}
+
+.regocon {
+    color: white !important;
+    font-weight: 100;
+    margin: 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    min-width: 110px;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(135deg, #181818 62%, #218af8 88%, #181818 84%);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 7px 0px black;
+}
+
+.logouticonss {
+    font-size: 25px;
+    text-align: -webkit-center;
+    color: #ffffff;
+    background: #171c28;
+    padding: 10px;
+    border: 1px solid #181b22;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-shadow: inset -1px -1px 2px #39bbf0;
+}
+
+
+.logouticonss:hover {
+    font-size: 25px;
+    text-align: -webkit-center;
+    color: #ff0000;
+    background: linear-gradient(45deg, #1e2024, #11151f);
+    padding: 10px;
+    border: 1px solid #181b22;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-shadow: inset -1px -1px 2px #ff0000;
+    cursor: pointer;
+}
+
+
+.regologhinpanel {
+    display: flex;
+    position: relative;
+    float: right;
+    padding: 22px;
+    text-align: center;
+    margin-top: 38px;
+    right: 150px;
+    width: 320px;
+    height: 75px;
+    background-image: linear-gradient( #0e121b 0%, rgb(55 143 220 / 42%) 100%);
+    box-shadow: inset rgb(255 255 255 / 20%) 0px 1px 0px, rgb(0 0 0 / 40%) 0px 1px 14px;
+    border-radius: 4px;
+    text-shadow: rgb(0 0 0 / 60%) 0px 1px 2px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+		
+.anim {
+    position: relative;
+    background: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: -68px;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 2.5s;
+}
+
+.anim:hover {
+    position: relative;
+    color: white;
+    background-image: linear-gradient(45deg, #3986e6, #39c4f2);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: -68px;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 2.5s;
+}
+
+
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 2%;}
+    100%{ left: 0;}
+}
+
+.anim:before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-right-color: white;
+    left: -13px;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+.anim:hover:before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-right-color: #3991e8;
+    left: -13px;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+
+@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}@keyframes fadeOut{0%{opacity:1;}100%{opacity:0;}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px);}100%{opacity:1;transform:translateY(0);}}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0);}100%{opacity:0;transform:translateY(20px);}}.ipsAnim_fade.ipsAnim_in{opacity:1;animation-name:fadeIn;}.ipsAnim_fade.ipsAnim_out{opacity:1;animation-name:fadeOut;}.ipsAnim_fade.ipsAnim_in.ipsAnim_down{animation-name:fadeInDown;}.ipsAnim_fade.ipsAnim_out.ipsAnim_down{animation-name:fadeOutDown;}@keyframes blindDown{0%{height:0;}100%{height:auto;}}.ipsAnim_blind.ipsAnim_down{height:auto;animation-name:blindDown;}@keyframes blindUp{0%{height:auto;}100%{height:0;}}.ipsAnim_blind.ipsAnim_up{height:0;animation-name:blindUp;}@keyframes slideFromRight{0%{right:-100%;}100%{right:0;}}.ipsAnim_slide.ipsAnim_left{right:0;animation-name:slideFromRight;}@keyframes zoomIn{0%{transform:scale(0);}100%{transform:scale(1);}}.ipsAnim_zoom.ipsAnim_in{animation-name:zoomIn;}@keyframes zoomOut{0%{transform:scale(1);}100%{transform:scale(0);opacity:0;}}.ipsAnim_zoom.ipsAnim_out{animation-name:zoomOut;opacity:1;}@keyframes wobble{0%{transform:translateX(0%);}15%{transform:translateX(-5%) rotate(-4deg);}30%{transform:translateX(5%) rotate(2deg);}45%{transform:translateX(-4%) rotate(-2deg);}60%{transform:translateX(4%) rotate(1deg);}75%{transform:translateX(-3%) rotate(-1deg);}100%{transform:translateX(0%);}}.ipsAnim_wobble{animation-name:wobble;}@keyframes jiggle{0%{transform:rotate(-3deg);}50%{transform:rotate(3deg);}}.ipsAnim_jiggle{animation:jiggle 0.3s infinite;}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0);}100%{opacity:0;transform:translateY(20px);}}.ipsAnim_fadeOutDown{animation-name:fadeOutDown;}@keyframes pulseOnce{0%{transform:scale(1);}50%{transform:scale(1.15);}100%{transform:scale(1);}}.ipsAnim_pulseOnce{animation-name:pulseOnce;}@keyframes dummy_anim{0%{background-color:rgba( var(--theme-area_background), 0.6 );}50%{background-color:rgba( var(--theme-area_background), 0.9 );}99%{background-color:rgba( var(--theme-area_background), 0.6 );}}
+
+@keyframes logo-float{0%{transform:translateX(-10px);}50%{transform:translateX(10px);}100%{transform:translateX(-10px);}}]]>
+		</stylesheet>
+		<stylesheet name="ucp.css" version="1830"><![CDATA[.blockmenuuser {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.nameandviewprofile {
+    color: #b3b3b3;
+	text-align: start;
+}
+
+.smalldescriptionss {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.useroravatarsmall {
+    font-size: 30px;
+    color: #161a21;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1830"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+	background: url(images/star_rating.png) left -1000px repeat-x;
+	vertical-align: middle;
+}
+
+.star_rating {
+	position: relative;
+	width:80px;
+	height:16px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+td .star_rating {
+	margin: auto;
+}
+
+.star_rating li {
+	display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+	position: absolute;
+	text-indent: -1000px;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	top:0;
+	left:0;
+}
+
+.star_rating_notrated li a:hover {
+	background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+	width:20%;
+	z-index:6;
+}
+
+.star_rating li a.two_stars {
+	width:40%;
+	z-index:5;
+}
+
+.star_rating li a.three_stars {
+	width:60%;
+	z-index:4;
+}
+
+.star_rating li a.four_stars {
+	width:80%;
+	z-index:3;
+}
+
+.star_rating li a.five_stars {
+	width:100%;
+	z-index:2;
+}
+
+.star_rating .current_rating {
+	z-index:1;
+	background-position: left center;
+}
+
+.star_rating_success,
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.inline_rating {
+	background: url(images/star_rating.png) left -1000px repeat-x;
+	float: left;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+		]]>
+		</stylesheet>
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[.thread_status:before {
+    font-family: "FontAwesome";
+    font-size: 16px;
+}
+.thread_status.dot_folder:before {
+    color: #a0a0a0;
+    content: "\f075"
+}
+.thread_status.dot_hotfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.dot_hotlockfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.dot_lockfolder:before {
+    color: #a0a0a0;
+    content: "\f023"
+}
+.thread_status.dot_newfolder:before {
+    color: #0066a2;
+    content: "\f15c"
+}
+.thread_status.dot_newhotfolder:before {
+    color: #0066a2;
+    content: "\f06d"
+}
+.thread_status.dot_newhotlockfolder:before {
+    color: #0066a2;
+    content: "\f06d"
+}
+.thread_status.dot_newlockfolder:before {
+    color: #0066a2;
+    content: "\f023"
+}
+.thread_status.folder:before {
+    color: #a0a0a0;
+    content: "\f075"
+}
+.thread_status.hotfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.hotlockfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.lockfolder:before {
+    color: #a0a0a0;
+    content: "\f023"
+}
+.thread_status.newfolder:before {
+    color: #0066a2;
+    content: "\f075";
+}
+.thread_status.newhotfolder:before {
+    color: #0066a2;
+    content: "\f06d";
+}
+.thread_status.newhotlockfolder:before {
+    color: #0066a2;
+    content: "\f06d"
+}
+.thread_status.newlockfolder:before {
+    color: #0066a2;
+    content: "\f023"
+}
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[ul.thread_tools,ul.thread_tools li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 0;
+	padding-bottom: 4px;
+	margin-bottom: 3px; 
+	font-size: 11px;
+}
+
+ul.thread_tools li.printable:before {
+    font-family: FontAwesome;
+    font-size: 10px;
+    position: absolute; 
+    z-index: 1;
+    margin-left: -20px;
+}
+
+ul.thread_tools li.printable:after{
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #696969;
+    content: "\f02f";
+	float: left;
+	position: relative; 
+    z-index: 0; 
+	padding-right: 5px;
+}
+
+ul.thread_tools li.sendthread:before {
+    font-family: FontAwesome;
+    font-size: 8px;
+    position: absolute; 
+    z-index: 1;
+    margin-left: -20px;
+}
+
+ul.thread_tools li.sendthread:after {
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #696969;
+    content: "\f0e0";
+	position: relative;
+    z-index: 0;
+	float: left;
+	padding-right: 5px;
+}
+
+ul.thread_tools li.subscription_add:before {
+    font-family: FontAwesome;
+    font-size: 8px;
+    position: absolute; 
+    z-index: 1;
+    margin-left: -20px;
+}
+
+ul.thread_tools li.subscription_add:after {
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #696969;
+    content: "\f067";
+	position: relative;
+    z-index: 0;
+	float: left;
+	padding-right: 5px;
+}
+
+ul.thread_tools li.subscription_remove:before {
+    font-family: FontAwesome;
+    font-size: 8px;
+    position: absolute; 
+    z-index: 1;
+    margin-left: -20px;
+}
+
+ul.thread_tools li.subscription_remove:after {
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #696969;
+    content: "\f068";
+	position: relative;
+    z-index: 0;
+	float: left;
+	padding-right: 5px;
+}
+
+ul.thread_tools li.poll:before {
+    font-family: FontAwesome;
+    font-size: 8px;
+    position: absolute; 
+    z-index: 1;
+    margin-left: -20px;
+}
+
+ul.thread_tools li.poll:after {
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #696969;
+    content: "\f080";
+	position: relative;
+    z-index: 0;
+	float: left;
+	padding-right: 5px;
+}
+
+.showthread_spinner {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+}		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1830"><![CDATA[.usercp_nav_composepm, .usercp_nav_pmfolder,.usercp_nav_sub_pmfolder, .usercp_nav_trash_pmfolder, .usercp_nav_pmtracking, .usercp_nav_pmfolders, .usercp_nav_profile, .usercp_nav_email, .usercp_nav_password, .usercp_nav_username, .usercp_nav_editsig, .usercp_nav_avatar, .usercp_nav_options, .usercp_nav_usergroups, .usercp_nav_editlists, .usercp_nav_attachments, .usercp_nav_drafts, .usercp_nav_subscriptions, .usercp_nav_fsubscriptions, .usercp_nav_notepad, .usercp_nav_viewprofile, .usercp_nav_home {
+    position: relative;
+}
+
+.usercp_nav_composepm:before, .usercp_nav_pmfolder:before, .usercp_nav_sub_pmfolder:before, .usercp_nav_trash_pmfolder:before, .usercp_nav_pmtracking:before, .usercp_nav_pmfolders:before,   .usercp_nav_profile:before, .usercp_nav_email:before, .usercp_nav_password:before, .usercp_nav_username:before, .usercp_nav_editsig:before, .usercp_nav_avatar:before, .usercp_nav_options:before, .usercp_nav_usergroups:before, .usercp_nav_editlists:before, .usercp_nav_attachments:before, .usercp_nav_drafts:before, .usercp_nav_subscriptions:before, .usercp_nav_fsubscriptions:before, .usercp_nav_notepad:before, .usercp_nav_viewprofile:before, .usercp_nav_home:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 2px;
+    color: #a0a0a0;
+    margin-right: 10px;
+}
+
+.usercp_nav_composepm:before {
+content: "\f0e0";
+}
+
+
+.usercp_nav_pmfolder:before {
+content: "\f114";
+}
+
+.usercp_nav_sub_pmfolder:before {
+content: "\f115";
+}
+
+
+.usercp_nav_trash_pmfolder:before {
+content: "\f014";
+}
+
+.usercp_nav_pmtracking:before {
+content: "\f06e";
+}
+
+.usercp_nav_pmfolders:before {
+content: "\f0b1";
+}
+
+.usercp_nav_profile:before {
+content: "\f14b";
+}
+
+.usercp_nav_email:before {
+content: "\f003";
+}
+
+.usercp_nav_password:before {
+content: "\f084";
+}
+
+.usercp_nav_username:before {
+content: "\f007";
+}
+
+.usercp_nav_editsig:before {
+content: "\f040";
+}
+
+.usercp_nav_avatar:before {
+content: "\f03e";
+}
+
+.usercp_nav_options:before {
+content: "\f013";
+}
+
+.usercp_nav_usergroups:before {
+content:  "\f0c0";
+}
+
+.usercp_nav_editlists:before {
+content:  "\f004";
+}
+
+.usercp_nav_attachments:before {
+content: "\f0c1";
+}
+
+.usercp_nav_drafts:before {
+content: "\f15c";
+}
+
+.usercp_nav_subscriptions:before {
+content: "\f02e";
+}
+
+.usercp_nav_fsubscriptions:before {
+content: "\f0f6";
+}
+
+.usercp_nav_notepad:before {
+content: "\f044";
+}
+
+.usercp_nav_viewprofile:before {
+content: "\f007";
+}
+
+.usercp_nav_home:before {
+content: "\f015";
+}
+
+.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 3px;
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+  margin: 5px;
+  padding: 10px;
+}
+
+.usercp_container img {
+	border-radius: 2px;
+}
+
+.pmspace {
+	float: right;
+	margin: -3px 5px;
+}
+
+.pmspace_container {
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 100px;
+	display: inline-block;
+}
+
+.pmspace_used {
+	display: inline-block;
+	color: #fff;
+	margin: -1px;
+}
+
+.pmspace_used.low {
+	border: 1px solid #0c5a01;
+	background: #167203;
+}
+
+.pmspace_used.medium {
+	background: #ff862b;
+	border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+	background: #e73c3c;
+	border: 1px solid #c00;
+}
+
+.pmspace_unused {
+	display: inline-block;
+}
+
+.pmspace_text {
+	padding: 1px 5px;
+	display: inline-block;
+}
+
+
+
+.user_new_pm:before {font-family:FontAwesome; content: "\f0e0"; font-size:16px}
+.user_old_pm:before {font-family:FontAwesome; content: "\f2b6"; font-size:16px}
+.user_fw_pm:before {font-family:FontAwesome; content: "\f2b6"; position:absolute; font-size:16px}
+.user_fw_pm:after {font-family:FontAwesome; content: "\f178"; position:relative; top:11px; left:5px; color:#0066a2; font-size:16px}
+.user_re_pm:before {font-family:FontAwesome; content: "\f2b6"; position:absolute; font-size:16px}
+.user_re_pm:after {font-family:FontAwesome; content: "\f177"; position:relative; top:11px; right:5px; color:#353535; font-size:16px}
+
+		]]>
+		</stylesheet>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1830"><![CDATA[.modcp_nav_item {
+	display: block;
+	
+}
+
+.modcp_nav_home, .modcp_nav_announcements,.modcp_nav_reports,  .modcp_nav_modqueue, .modcp_nav_modlogs, .modcp_nav_editprofile, .modcp_nav_banning, .modcp_nav_warninglogs, .modcp_nav_ipsearch  {
+    position: relative;
+    padding: 0px;
+}
+
+.modcp_nav_home:before, .modcp_nav_announcements:before, .modcp_nav_reports:before, .modcp_nav_modqueue:before, .modcp_nav_modlogs:before, .modcp_nav_ipsearch:before,   .modcp_nav_banning:before, .modcp_nav_editprofile:before, .modcp_nav_warninglogs:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 2px;
+    color: #a0a0a0;
+    margin-right: 10px;
+}
+
+.modcp_nav_home:before {
+content: "\f013";
+}
+
+
+.modcp_nav_announcements:before {
+content: "\f130";
+}
+
+.modcp_nav_reports:before {
+content: "\f071";
+}
+
+
+.modcp_nav_modqueue:before {
+content: "\f0ad";
+}
+
+.modcp_nav_modlogs:before {
+content: "\f0ae";
+}
+
+.modcp_nav_editprofile:before {
+content: "\f044";
+}
+
+.modcp_nav_banning:before {
+content: "\f070";
+}
+
+.modcp_nav_warninglogs:before {
+content: "\f03c";
+}
+
+.modcp_nav_ipsearch:before {
+content: "\f002";
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore, .label_radio_delete, .label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+	</stylesheets>
+	<templates>
+		<template name="error_inline" version="1810"><![CDATA[<div class="error">
+	<p><em><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> {$title}</em></p>
+	<ul>
+		{$errorlist}
+	</ul>
+</div>
+<br />]]></template>
+		<template name="footer" version="1830"><![CDATA[	</div>
+</div>
+
+
+
+
+
+
+<div id="footer">
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+		<div class="wrapper">
+			
+			</span>
+		
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE -->{$task_image}<!-- End task image code -->
+{$auto_dst_detection}
+</div>
+{$automention}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+	<div class="footer-infox"> 
+
+
+
+<div class="icon-position"> <div class="ceiconinfox"><i class="fas fa-exclamation-circle"></i></div> </div>
+
+<div class="textfooterinfo"> Niciunul dintre fișierele indexate nu este găzduit pe acest site. Link-urile fișierelor sunt furnizate exclusiv de catre utilizatorii site-ului. Administratorii site-ului nu sunt răspunzători de acțiunile userilor. Utilizarea serviciului în scopuri ilegale nu este permisă și atrage dezactivarea accesului.
+Înregistrarea pe site-ul nostru este gratuită. Nerespectarea termenilor și condițiilor impuse de administrarea comunității poate duce la suspendarea temporară sau permanentă a contului și drepturilor de acces. Toți membrii noștri sunt responsabili pentru propriile acțiuni.
+Toate reclamațiile legate de site-ul nostru vor fi examinate și soluționate în termen de cel mult 3 (trei) zile.
+
+ </div>
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+<div class="footercopyright">   Copyright Theme &copy; <a href="" target="_blank" rel="noopener" style="color: #007bffc7;text-transform: uppercase;font-weight: 600;">&nbsp;WEBGOD.RO  </a>
+	 <i class="fas fa-code"></i> <span class="textfooters" style=" text-transform: uppercase; "> Premium WebDesign Services  </span><br/>
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				{$lang->powered_by} <a href="https://mybb.com" target="_blank" rel="noopener">MyBB{$mybbversion}</a> &copy; 2002-{$copy_year} <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>
+				<!-- End powered by --> </div>]]></template>
+		<template name="forumbit_depth1_cat" version="1830"><![CDATA[<div class="forumsresponsive">	<div class="categorynameforum"><img src="https://forum.webgod.ro/images/ficons/categlogo.png" style=" display: none; ">  <a href="{$forum_url}" title="{$forum['name']}" class="fontforumtitle"> {$forum['name']}</a>{$forum['description']}</div>
+
+<div class="subforumsflexy">
+{$sub_forums}
+</div></div>]]></template>
+		<template name="forumbit_depth1_cat_subforum" version="1830"><![CDATA[<tr>
+<td class="tcat" colspan="6"><strong>&raquo;&nbsp;&nbsp;<a href="{$forum_url}">{$forum['name']}</a></strong><br /><span class="smalltext">{$forum['description']}</span></td></tr>{$sub_forums}]]></template>
+		<template name="forumbit_depth1_forum_lastpost" version="1830"><![CDATA[<avatarep_uid_[{$lastpost_data['lastposteruid']}]>
+	<span class="smalltext">
+<a href="{$lastpost_link}" title="{$full_lastpost_subject}"><strong>{$lastpost_subject}</strong></a>
+<br />{$lastpost_date}<br />{$lang->by} {$lastpost_profilelink}</span>]]></template>
+		<template name="forumbit_depth2_cat" version="1830"><![CDATA[<div class="flexyforumsd2">
+	
+	
+<div class="d2forumicons">	{$forum['icon']} </div>
+<div class="d2foruminame">	<span class="forumtitleind"><a href="{$forum_url}" title=""> {$forum['name']}  </a></span>
+	<br>
+<span class="forumdescriptionsmall">	<i class="fas fa-caret-right" style="font-size: 10px;"></i> {$forum['description']}</span>  
+	
+	<div class="d2subforums">	
+	{$subforums}</div>
+	
+	</div>
+	
+
+	
+<div class="threads2dposts responsivehide"> 	
+	{$threads}{$unapproved['unapproved_threads']} Threads <br>
+	{$posts}{$unapproved['unapproved_posts']} Posts
+</div>
+	
+<div class="d2lastposts">	
+	{$lastpost}
+</div>
+	
+	
+</div>]]></template>
+		<template name="forumbit_depth2_forum" version="1830"><![CDATA[<div class="flexyforumsd2">
+	
+	
+<div class="d2forumicons">	{$forum['icon']} </div>
+<div class="d2foruminame">	<a href="{$forum_url}" title=""><span class="forumtitleind"> {$forum['name']} </span> </a>
+	<br>
+<span class="forumdescriptionsmall">	<i class="fas fa-caret-right" style="font-size: 10px;"></i> {$forum['description']}</span>  
+	
+	<div class="d2subforums">	
+	{$subforums}</div>
+	
+	</div>
+	
+
+	
+<div class="threads2dposts responsivehide"> 	
+	<div class="displaynone" style=" display: none; "> {$threads}{$unapproved['unapproved_threads']}</div>    {$posts}{$unapproved['unapproved_posts']} <br> posts
+</div>
+	
+<div class="d2lastposts">	
+	{$lastpost}
+</div>
+	
+	
+</div>]]></template>
+		<template name="forumbit_depth2_forum_lastpost" version="1830"><![CDATA[<div class="flexylastpost">
+
+	
+	<div class="threadname"><a href="{$lastpost_link}" title="{$full_lastpost_subject}"> <span class="lastposttitlefl"> {$lastpost_subject}</span></a>
+		
+		<br><span class="bylang"> By {$lastpost_profilelink}</span> <span class="dateofposting">• {$lastpost_date}</span></div>
+
+<div class="avatarepposition"> <avatarep_uid_[{$lastpost_data['lastposteruid']}]></div> 
+
+</div>]]></template>
+		<template name="forumbit_depth2_forum_lastpost_hidden" version="1830"><![CDATA[<div class="forum-footer center">Hidden</div>]]></template>
+		<template name="forumbit_depth2_forum_lastpost_never" version="1830"><![CDATA[<div class="forum-footer center">{$lang->lastpost_never}</div>]]></template>
+		<template name="forumbit_depth3" version="1830"><![CDATA[<li>{$statusicon}<a href="forumdisplay.php?fid={$forum['fid']}" title="{$forum_viewers_text_plain}">{$forum['name']}</a></li>]]></template>
+		<template name="forumbit_depth3_statusicon" version="1830"><![CDATA[<i class="fas fa-folder subforum_{$lightbulb['folder']} ajax_mark_read" id="mark_read_{$forum['fid']}" ></i>]]></template>
+		<template name="forumbit_moderators" version="1830"><![CDATA[{$lang->forumbit_moderated_by} {$moderators}]]></template>
+		<template name="forumbit_subforums" version="1830"><![CDATA[<ul class="columns" style="text-transform: uppercase;font-weight: 200;">{$sub_forums}</ul></div>]]></template>
+		<template name="forumdisplay_thread_attachment_count" version="1810"><![CDATA[<div class="float_right"><i class="fa fa-paperclip fa-lg" aria-hidden="true" title="{$attachment_count}"></i></div>]]></template>
+		<template name="forumdisplay_thread_gotounread" version="1810"><![CDATA[<a href="{$thread['newpostlink']}"><i class="fa fa-chevron-circle-right" aria-hidden="true" alt="{$lang->goto_first_unread}" title="{$lang->goto_first_unread}"></i></a>]]></template>
+		<template name="global_pm_alert" version="1810"><![CDATA[<div class="pm_alert" id="pm_notice">
+	<div class="float_right"><a href="{$mybb->settings['bburl']}/private.php?action=dismiss_notice&amp;my_post_key={$mybb->post_code}" title="{$lang->dismiss_notice}" onclick="return MyBB.dismissPMNotice('{$mybb->settings['bburl']}/')"><i class="fa fa-times-circle"></i></a></div>
+	<div>{$privatemessage_text}</div>
+</div>]]></template>
+		<template name="header" version="1830"><![CDATA[<div class="bgtopmenublue"> <div class="bluemenubartop">  
+
+<div class="menulefttopblue"> 
+	
+	<div class="headerlogo"><img src="https://i.imgur.com/2jFO70t.png" alt="NulledBB" title="NulledBB" height="35" width="35"></div>
+
+</div>	
+	
+<div class="menurighttopblue">  	
+	
+<div class="headermenuficons"> 
+	
+
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn bluemenualink"> <i class="fas fa-users mr-2"></i> COMMUNITY</button>
+  <div id="myDropdown" class="dropdown-content">
+	  
+<div class="dropdowntop">  	<div class="dropdownleft">  
+ 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #ec407a; "><i class="fas fa-globe"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #ec407a;"> All Features </span> <br>  <span class="menudesctop">Overview of all exisiting features. </span></div>
+	</div>    
+	</a>
+	
+	
+ 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #42a5f5; "><i class="fas fa-award"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #42a5f5;"> Awards </span> <br>  <span class="menudesctop">Earn awards for different tasks. </span></div>
+	</div>    
+	</a>
+	
+	 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #ff7043; "><i class="fas fa-coins"></i> </div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #ff7043;"> Credits </span> <br>  <span class="menudesctop">Everything related to credits.</span></div>
+	</div>    
+	</a>
+	
+	 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #66bb6a; "><i class="fas fa-question-circle"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #66bb6a;"> Help Center </span> <br>  <span class="menudesctop">Official regulations and help documents. </span></div>
+	</div>    
+	</a>
+	
+	
+	  </div>
+	  <div class="dropdownright">
+ 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #5c6bc0; "><i class="fas fa-swatchbook"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #5c6bc0;"> Projects  </span> <br>  <span class="menudesctop">Various incoming work projects. </span></div>
+	</div>    
+	</a>
+	
+	 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #fd3834; "><i class="fas fa-bug"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #fd3834;"> Bug Tracker </span> <br>  <span class="menudesctop">Report site related bugs the right way. </span></div>
+	</div>    
+	</a>
+	 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #ffca28; "><i class="fas fa-user-friends"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #ffca28;"> Groups </span> <br>  <span class="menudesctop">A list of user run groups you can join.</span></div>
+	</div>    
+	</a>
+	
+	 
+	
+	
+	<a class="firstlinkmenu" href="#">  
+		<div class="menulinkstructure">  
+  <div class="menulinkicon" style=" color: #26a69a; "><i class="fas fa-address-book"></i></div>   
+	  <div class="menulinknamedescript"> <span class="menulinknames"  style="color: #26a69a;"> Memberlist </span> <br>  <span class="menudesctop">A list of all registered members.</span></div>
+	</div>    
+	</a>
+	
+	
+	  </div>	  </div>
+	  <br>  <br>  <br>  <br>
+<div class="dropdownbottom"> 	  
+	 <div class="texttitledrp2bot"> Latest Announcements </div> 
+	 <div class="contentdrp2bot"> 
+		 
+	    	• Latest Announcements
+		<br>	• Latest Announcements
+		<br>	• Latest Announcements
+	
+	
+	</div> 
+	
+	
+	
+	 </div> 
+	  
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	
+	
+	
+	
+	<div class="bluemenualink"><i class="fas fa-question-circle mr-2"></i> SUPPORT </div>
+	<div class="bluemenualink"> <i class="fas fa-store mr-2"></i> SHOP  </div>
+	<div class="bluemenualink"><i class="fas fa-star mr-2"></i> UPGRADE </div>
+	
+	</div>
+
+	
+	<div class="headwelcomeblmember">  {$welcomeblock} </div>
+
+
+</div>
+
+</div></div>
+
+<div class="bgnavigationmenu"> <div class="underflexmenu"> <navigation>  <div class="undermenunaviright"> 
+	
+	
+	
+	<span class="linknavibargg">View New Posts </span><b> {$mybb->user['newpoints']} </b>   <i class="fas fa-coins" style=" color: #f57c00; margin-left: 5px; "></i>  <div class="buttonssidebarhide" style=" display: flex; align-items: center; align-content: center; flex-wrap: nowrap; flex-direction: row; justify-content: flex-end; ">
+	<a class="buttons" style="float: right;"></a><a class="clickedbuttons" style="float: right;"></a> 
+	</div></div> </div></div>
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			
+			
+			
+			
+			<div id="logo">
+				
+			
+				<div class="wrapper">
+					
+					
+						<div id="logodiv"> <a href="{$mybb->settings['bburl']}/index.php"><span id="hb_title">WEBGOD<br><span id="hb_desc">DESIGN  &amp;  CODING  &amp; DEVELOPEMENT </span></span> </a></div>
+					
+				
+				
+				</div>
+			</div>
+	
+		<div id="content">
+			<div class="wrapper">
+				
+				<div class="text-perform-purple mobile100" style="width: 98.7%;font-size: 15px;font-weight: 600;text-transform: uppercase;display: none;"><div class="floatleftstar responsivehide"> <i class="fas fa-star rotate" aria-hidden="true"></i> </div>  UPGRADE  Account <div class="floatrightstar responsivehide"> <i class="fas fa-star rotate" aria-hidden="true"></i></div></div>
+				
+				
+			
+				{$pm_notice}
+				{$remote_avatar_notice}
+				{$bannedwarning}
+				{$bbclosedwarning}
+				{$unreadreports}
+				{$pending_joinrequests}
+				{$awaitingusers}
+				
+				<br />]]></template>
+		<template name="headerinclude" version="1830"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1810"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.nulledbb.com/static/css/vendor/fontawesome/fontawesome.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.nulledbb.com/static/css/vendor/fontawesome/solid.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.nulledbb.com/static/css/vendor/fontawesome/brands.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+
+{$stylesheets}
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "{$lang->unknown_error}";
+
+	lang.select2_match = "{$lang->select2_match}";
+	lang.select2_matches = "{$lang->select2_matches}";
+	lang.select2_nomatches = "{$lang->select2_nomatches}";
+	lang.select2_inputtooshort_single = "{$lang->select2_inputtooshort_single}";
+	lang.select2_inputtooshort_plural = "{$lang->select2_inputtooshort_plural}";
+	lang.select2_inputtoolong_single = "{$lang->select2_inputtoolong_single}";
+	lang.select2_inputtoolong_plural = "{$lang->select2_inputtoolong_plural}";
+	lang.select2_selectiontoobig_single = "{$lang->select2_selectiontoobig_single}";
+	lang.select2_selectiontoobig_plural = "{$lang->select2_selectiontoobig_plural}";
+	lang.select2_loadmore = "{$lang->select2_loadmore}";
+	lang.select2_searching = "{$lang->select2_searching}";
+
+	var cookieDomain = "{$mybb->settings['cookiedomain']}";
+	var cookiePath = "{$mybb->settings['cookiepath']}";
+	var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+	var cookieSecureFlag = "{$mybb->settings['cookiesecureflag']}";
+	var deleteevent_confirm = "{$lang->deleteevent_confirm}";
+	var removeattach_confirm = "{$lang->removeattach_confirm}";
+	var loading_text = '{$lang->ajax_loading}';
+	var saving_changes = '{$lang->saving_changes}';
+	var use_xmlhttprequest = "{$mybb->settings['use_xmlhttprequest']}";
+	var my_post_key = "{$mybb->post_code}";
+	var rootpath = "{$mybb->settings['bburl']}";
+	var imagepath = "{$theme['imgdir']}";
+  	var yes_confirm = "{$lang->yes}";
+	var no_confirm = "{$lang->no}";
+	var MyBBEditor = null;
+	var spinner_image = "{$theme['imgdir']}/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+
+
+
+<script type="text/javascript">
+
+var isVisible = false;
+
+function toggleDivDisplay(event) {
+    var contentDiv = document.getElementById("contentmainusermenu");
+    if (isVisible) {
+        contentmainusermenuDiv.style.display = "none";
+        isVisible = !isVisible;
+    }
+    else if(event != undefined && 
+            'target' in event && 
+            event.target.id == "imgId") {
+        contentmainusermenuDiv.style.display = "block";
+        isVisible = !isVisible;
+    }
+}
+
+document.body.onclick = toggleDivDisplay;
+
+</script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/sidebar.js"></script>]]></template>
+		<template name="header_menu_calendar" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/calendar.php"><i class="fa fa-calendar" aria-hidden="true"></i> {$lang->toplinks_calendar}</a></li>]]></template>
+		<template name="header_menu_memberlist" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/memberlist.php"><i class="fa fa-users" aria-hidden="true"></i> {$lang->toplinks_memberlist}</a></li>]]></template>
+		<template name="header_menu_portal" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/portal.php"><i class="fa fa-bell" aria-hidden="true"></i> {$lang->toplinks_portal}</a></li>]]></template>
+		<template name="header_menu_search" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/search.php"><i class="fa fa-search" aria-hidden="true"></i> {$lang->toplinks_search}</a></li>]]></template>
+		<template name="header_welcomeblock_guest" version="1810"><![CDATA[						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">{$lang->welcome_guest}&nbsp; &nbsp; <a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;"><i class="fa fa-key"></i> {$lang->welcome_login}</a> &nbsp; <a href="{$mybb->settings['bburl']}/member.php?action=register"><i class="fa fa-user-plus"></i> {$lang->welcome_register}</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="{$mybb->settings['bburl']}/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<table width="100%" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>{$lang->login}</strong></td>
+							</tr>
+							<tr>
+								<td class="trow1" width="25%"><strong>{$login_username}</strong></td>
+								<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+							</tr>
+							<tr>
+								<td class="trow2"><strong>{$lang->password}</strong></td>
+								<td class="trow2">
+									<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /> <a href="{$mybb->settings['bburl']}/member.php?action=lostpw" class="lost_password">{$lang->lost_password}</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow1">&nbsp;</td>
+								<td class="trow1 remember_me">
+									<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+									<label for="quick_login_remember">{$lang->remember_me}</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow2" colspan="2">
+									<div align="center"><input name="submit" type="submit" class="button" value="{$lang->login}" /></div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>]]></template>
+		<template name="header_welcomeblock_member" version="1830"><![CDATA[<a href="{$mybb->settings['bburl']}/private.php" class="item-icon d-flex align-items-center justify-content-center ml-3 rounded-circle position-relative unread unread-0"><div class="messajesmenuwelblock mr-2"><i class="fas fa-inbox"></i> <div class="positionmessajes" style=" font-size: 10px; position: absolute; background: #212735; margin: -20px -25px; padding: 5px 10px; /* display: inline-flex; */ border-radius: 100px; ">{$mybb->user['pms_unread']}</div>  </div> </a>
+
+<a href="javascript:void(0)" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/alerts.php?action=alertspopup&modal=1', null, true); return false;" class="item-icon d-flex align-items-center justify-content-center ml-3 rounded-circle position-relative unread unread-0"><div class="alertsmenuwelblock" style=" margin-right: 16px !important; "> <i class="fas fa-bell"></i> {$mybb->user['unreadAlerts']}</div> </a>
+
+
+	
+	
+	
+
+
+
+<div class="dropdownmenufull">
+  <button class="dropbutttonns"><if $mybb->user['avatar'] then>
+				<img title="{$mybb->user['username']}" alt="Pic" src="{$mybb->user['avatar']}" style=" width: 35px; height: 35px; border-radius: 100%; "/>
+				<else>
+					<img title="{$mybb->user['username']}" alt="Pic" src="https://www.wtfcs.com/forum/images/arcobaleno/default_avatar.png" style=" width: 35px; height: 35px; border-radius: 100%; "/>
+				</else>
+			</if></button>
+  <div class="dropmenud-content">
+    <br>
+	  <div class="blockmenuuser"> 
+		  <div class="nameandviewprofile"> <span class="titlenamed"> {$mybb->user['username']} #  {$mybb->user['uid']}</span> <br> <span class="smalldescriptionss" ><a href="{$mybb->settings['bburl']}/member.php?action=profile&uid={$mybb->user['uid']}" style=" color: #cbd3df; text-decoration: none; padding: 0; font-size: 10px; ">VIEW PROFILE </a></span> </div> 
+	   <div class="useroravatarsmall"> <i class="fas fa-cogs"></i> </div> 
+	  </div> 
+	  
+	  </br>
+    <a href="{$mybb->settings['bburl']}/usercp.php" style=" background: #212735; color: white; "><span class="floatleft" style=" float: left; "><i class="far fa-clipboard"></i></span><span class="floatright"> DASHBOARD</span></a>
+    <a href="#" style=" color: white; background: #212735; border-top: 1px solid #74747414; "> <span class="floatleft" style=" float: left; "><i class="fas fa-boxes" ></i></span><span class="floatright">INVENTORY</span></a>
+	  
+	
+	
+	  <a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}" class="logout"> LOGOUT </a>
+  </div>
+</div>]]></template>
+		<template name="header_welcomeblock_member_admin" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php"><i class="fa fa-gear" aria-hidden="true"></i> {$lang->welcome_admin}</a></li>]]></template>
+		<template name="header_welcomeblock_member_moderator" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/modcp.php"><i class="fa fa-file" aria-hidden="true"></i> {$lang->welcome_modcp}</a></li>]]></template>
+		<template name="header_welcomeblock_member_pms" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/private.php">{$lang->welcome_pms}</a> {$lang->welcome_pms_usage}</li>]]></template>
+		<template name="header_welcomeblock_member_search" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/search.php?action=getnew">{$lang->welcome_newposts}</a></li>
+<li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily">{$lang->welcome_todaysposts}</a></li>]]></template>
+		<template name="header_welcomeblock_member_user" version="1810"><![CDATA[<li><a href="{$mybb->settings['bburl']}/usercp.php"><i class="fa fa-user" aria-hidden="true"></i> {$lang->welcome_usercp}</a></li>]]></template>
+		<template name="index" version="1830"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "{$lang->no_new_posts}";
+	lang.click_mark_read = "{$lang->click_mark_read}";
+// -->
+</script>
+</head>
+<body>
+{$header}
+
+	
+	
+	
+	
+	 <br> 
+			
+		<div class="textinainteforums">	
+			<div class="floatlefty"> <span class="ftz20px">Welcome back,</span> <span class="forumsusernameaaa">{$mybb->user['username']} </span></div>
+			<div class="rightylefty responsivehide"><div class="btn1 responsivehide"><i class="fas fa-check maingradient"></i> Mark forums as read </div>	          <div class="btn2 responsivehide"><i class="fas fa-external-link-alt"></i> Show Unread Content </div>	</div>
+			</div>
+		
+	<style type="text/css">
+.buttons {
+    background: url(https://code.playtv.ro/images/collapse.png) no-repeat;
+height: 25px; width: 36px;
+    display: block;
+    cursor: pointer;
+}
+
+.clickedbuttons {
+    background: url(https://code.playtv.ro/images/collapse_collapsed.png) no-repeat;
+   height: 25px; width: 36px;
+    display: block;
+    cursor: pointer;
+}
+</style>
+	
+	
+	
+	
+<br class="clear" />
+	
+	
+	
+	
+<div class="sidebar">	
+	
+	
+	<a href="#">	<div class="upgradeblockindex"> 
+		<div class="textlinkupg"> UPGRADE ACCOUNT </div>
+		<div class="descriptionupgrade"> GET NOW ALL FEATURES </div>
+	</div></a>
+	
+	
+	
+	
+	<div class="sideblock"> 
+		
+		<div class="sideblockhead"><i class="fab fa-battle-net maingradient"></i>  Lastest Projects	</div>
+		<br>
+		<div class="sideblockcontent"> 
+			<div class="sideblockcontentleft"> •  AnimateBB </div> <div class="sideblockcontentright poststinsidebar maingradient" > 25$ </div>  </div>
+		
+ 
+	<div class="sideblockcontent"> 
+			<div class="sideblockcontentleft"> •  DeflectionBB </div> <div class="sideblockcontentright poststinsidebar maingradient"> 25$ </div>  </div>
+	
+	<div class="sideblockcontent"> 
+			<div class="sideblockcontentleft"> •  Hackintosh </div> <div class="sideblockcontentright poststinsidebar maingradient"> 45$ </div>  </div>
+	
+	<div class="sideblockcontent"> 
+			<div class="sideblockcontentleft"> •  Rainbow </div> <div class="sideblockcontentright poststinsidebar maingradient"> 15$ </div>  </div>
+	
+	
+	
+	
+	 </div>  	
+	
+
+	<br>
+
+	
+	
+	
+	
+	
+		<div class="sideblock"> 
+		
+		<div class="sideblockhead"> <i class="fas fa-check-circle maingradient"></i> Custom SideBlock	</div>
+		<br>
+		<div class="sideblockcontent"> 
+			Sideblock Content <br> 
+			Image <br> 
+			Text<br> 
+			Other<br> 
+			  </div>
+			
+		
+  	</div>
+	
+	
+	<br>
+	
+	
+</div>
+	
+	
+	
+	
+	
+	<div class="index-main">
+		<div class="forums tfixed" style="width: 80%;">	
+			
+			{$forums}{$boardstats}  </div><br> 
+	</div>
+<br class="clear"/> 
+{$footer}
+</body>
+</html>]]></template>
+		<template name="index_boardstats" version="1830"><![CDATA[{$forumstats}
+			
+{$birthdays}
+
+
+{$whosonline}
+<br>
+{$online_today}]]></template>
+		<template name="index_stats" version="1830"><![CDATA[
+<div class="forumstatsdown">
+
+
+
+<div class="statsdownbody">  <div class="statsdownhead"> {$stats['numposts']} </div>  <div class="statsdowncontent"> POSTS</div></div>
+
+<div class="statsdownbody">  <div class="statsdownhead">{$stats['numthreads']} </div>  <div class="statsdowncontent"> THREADS </div></div>
+	
+	<div class="statsdownbody">  <div class="statsdownhead">{$stats['numusers']} </div>  <div class="statsdowncontent"> USERS</div></div>
+	
+	<div class="statsdownbody">  <div class="statsdownhead">{$mostonline['numusers']}  </div>  <div class="statsdowncontent">  MOST ONLINE </div></div>
+	
+	
+	<div class="statsdownbody">  <div class="statsdownhead">{$newestmember} </div>  <div class="statsdowncontent"> LAST USER</div></div>
+
+</div>]]></template>
+		<template name="index_whosonline" version="1830"><![CDATA[<div class="sideblock" style="margin-bottom: 10px;"> 
+		
+		<div class="sideblockhead">  WHO'S ONLINE	</div>
+		<br>
+		<div class="sideblockcontent" style="display: block !important;">{$lang->online_note} <br><br>
+			{$onlinemembers}
+			
+	
+		
+  	</div>]]></template>
+		<template name="nav" version="1830"><![CDATA[<div class="navigation">
+ {$nav}{$activesep}{$activebit}
+</div>]]></template>
+		<template name="nav_sep_active" version="1810"><![CDATA[&rsaquo;]]></template>
+		<template name="portal_announcement" version="1810"><![CDATA[<table cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><strong>{$icon} <a href="{$mybb->settings['bburl']}/{$announcement['threadlink']}">{$announcement['subject']}</a></strong></td>
+</tr>
+<tr>
+<td class="trow2" align="right">
+<span class="smalltext">{$lang->posted_by} {$profilelink}  - {$anndate} - {$lang->forum} <a href="{$mybb->settings['bburl']}/{$announcement['forumlink']}">{$announcement['forumname']}</a> {$numcomments}</span>
+</td>
+</tr>
+<tr>
+<td class="trow1">
+<table border="0" cellpadding="{$theme['tablespace']}" class="tfixed" style="width: 100%;">
+	<tr>
+		{$avatar}
+		<td class="trow1 scaleimages">
+			<p>
+				{$message}
+			</p>
+			{$post['attachments']}
+		</td>
+	</tr>
+	<tr>
+		<td align="right" colspan="2" valign="bottom">
+			<span class="smalltext">
+				<a href="{$mybb->settings['bburl']}/printthread.php?tid={$announcement['tid']}"><i class="fa fa-print" aria-hidden="true" alt="{$lang->print_this_item}" title="{$lang->print_this_item}" ></i></a>{$senditem}
+			</span>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+<br />]]></template>
+		<template name="portal_announcement_send_item" version="1810"><![CDATA[&nbsp;<a href="{$mybb->settings['bburl']}/sendthread.php?tid={$announcement['tid']}"><i class="fa fa-envelope" aria-hidden="true" alt="{$lang->send_to_friend}" title="{$lang->send_to_friend}" ></i></a>]]></template>
+		<template name="postbit_author_user" version="1810"><![CDATA[	<div class="float_left">{$lang->postbit_posts}</div><div class="float_right">{$post['postnum']}</div><br />
+	<div class="float_left">{$lang->postbit_threads}</div><div class="float_right">{$post['threadnum']}</div><br />
+	<div class="float_left">{$lang->postbit_joined}</div><div class="float_right">{$post['userregdate']}</div>
+	{$post['replink']}{$post['profilefield']}{$post['warninglevel']}]]></template>
+		<template name="postbit_away" version="1810"><![CDATA[<a href="{$post['profilelink_plain']}" title="{$lang->postbit_status_away}"><i class="fa fa-user user-away" aria-hidden="true"></i></a>]]></template>
+		<template name="postbit_offline" version="1810"><![CDATA[<i class="fa fa-user user-offline" aria-hidden="true"></i>]]></template>
+		<template name="postbit_online" version="1810"><![CDATA[<a href="online.php" title="{$lang->postbit_status_online}"><i class="fa fa-user user-online" aria-hidden="true"></i></a>]]></template>
+		<template name="postbit_reputation" version="1810"><![CDATA[<br /><div class="float_left">{$lang->postbit_reputation}</div> <div class="float_right">{$post['userreputation']}</div>]]></template>
+		<template name="postbit_warninglevel" version="1810"><![CDATA[<br /><div class="float_left">{$lang->postbit_warning_level}</div> <div class="float_right"><a href="{$warning_link}">{$warning_level}</a></div>]]></template>
+		<template name="post_attachments_new" version="1810"><![CDATA[<tr>
+<td class="trow1" width="1"><i class="fa fa-paperclip fa-lg" aria-hidden="true"></i></td>
+<td class="trow1" style="white-space: nowrap"><strong>{$lang->new_attachment}</strong> <input type="file" name="attachment" size="30" class="fileupload" /></td>
+<td class="trow1" style="white-space: nowrap" align="center">{$attach_update_options} {$attach_add_options}</td>
+</tr>]]></template>
+		<template name="private_messagebit" version="1810"><![CDATA[<tr>
+	<td align="center" class="trow1" width="1%"><span class="user_{$msgstatus}" title="{$msgalt}"></span></td>
+	<td align="center" class="trow2" width="1%">{$icon}</td>
+	<td class="trow1" width="35%"><a class="{$msgstatus}" href="private.php?action=read&amp;pmid={$message['pmid']}">{$message['subject']}</a>{$denyreceipt}</td>
+	<td align="center" class="trow2">{$tofromusername}</td>
+	<td class="trow1" align="right" style="white-space: nowrap"><span class="smalltext">{$senddate}</span></td>
+	<td class="trow2" align="center"><input type="checkbox" class="checkbox" name="check[{$message['pmid']}]" value="1" /></td>
+</tr>]]></template>
+		<template name="private_search_messagebit" version="1810"><![CDATA[<tr>
+	<td align="center" class="trow1" width="1%"><span class="user_{$msgstatus}" title="{$msgalt}"></span></td>
+	<td align="center" class="trow2" width="1%">{$icon}</td>
+	<td class="trow1" width="35%"><a class="{$msgstatus}" href="private.php?action=read&amp;pmid={$message['pmid']}">{$message['subject']}</a>{$denyreceipt}
+	<br />{$message['message']}</td>
+	<td align="center" class="trow2">{$tofromusername}</td>
+	<td align="center" class="trow1"><a href="private.php?fid={$message['folder']}">{$foldername}</a></td>
+	<td class="trow2" align="center" style="white-space: nowrap"><span class="smalltext">{$senddate}</span></td>
+	<td class="trow1" align="center"><input type="checkbox" class="checkbox" name="check[{$message['pmid']}]" value="1" /></td>
+</tr>]]></template>
+		<template name="sendthread" version="1810"><![CDATA[<html>
+<head>
+<title>{$threadprefix['prefix']} {$thread['subject']} - {$lang->send_thread}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+{$errors}
+<form action="sendthread.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="2" width="100%" class="thead"><strong>{$lang->send_thread}</strong></td>
+</tr>
+{$from_email}
+<tr>
+<td width="40%" class="trow1"><strong>{$lang->recipient}</strong><br /><span class="smalltext">{$lang->recipient_note}</span></td>
+<td width="60%" class="trow1"><input type="text" class="textbox" size="50" name="email" value="{$email}" /></td>
+</tr>
+<tr>
+<td width="40%" class="trow2"><strong>{$lang->subject}</strong></td>
+<td width="60%" class="trow2"><input type="text" class="textbox" size="50" name="subject" value="{$subject}" /></td>
+</tr>
+<tr>
+<td valign="top" width="40%" class="trow1"><strong>{$lang->message}</strong></td>
+<td width="60%" class="trow1"><textarea cols="50" rows="10" name="message">{$message}</textarea></td>
+</tr>
+{$captcha}
+</table>
+<br />
+<input type="hidden" name="action" value="do_sendtofriend" />
+<input type="hidden" name="tid" value="{$tid}" />
+<div align="center"><input type="submit" class="button" value="{$lang->send_thread}" /></div>
+</form>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="showteam_usergroup_user" version="1810"><![CDATA[<tr>
+<td width="65%" class="{$bgcolor}"><img src="{$theme['imgdir']}/buddy_{$status}.png" title="{$lang->$status}" alt="{$lang->$status}" style="vertical-align: middle;" /><a href="{$user['profilelink']}"><strong>{$user['username']}</strong></a></td>
+<td width="15%" class="{$bgcolor}">{$user['lastvisit']}</td>
+<td width="10%" class="{$bgcolor}"><div class="postbit_buttons">{$emailcode}</div></td>
+<td width="10%" class="{$bgcolor}"><div class="postbit_buttons">{$pmcode}</div></td>
+</tr>]]></template>
+		<template name="usercp_nav_changename" version="1810"><![CDATA[<tr><td class="trow1 smalltext"><a href="usercp.php?action=changename" class="usercp_nav_item usercp_nav_username">{$lang->ucp_nav_change_username}</a></td></tr>]]></template>
+		<template name="usercp_nav_editsignature" version="1810"><![CDATA[<tr><td class="trow1 smalltext"><a href="usercp.php?action=editsig" class="usercp_nav_item usercp_nav_editsig">{$lang->ucp_nav_edit_sig}</a></td></tr>]]></template>
+		<template name="usercp_nav_messenger" version="1810"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercppms']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['usercppms']}.png" id="usercppms_img" class="expander" alt="[-]"/></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_messenger}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercppms_e']}" id="usercppms_e">
+	{$ucp_nav_compose}
+	{$folderlinks}
+	{$ucp_nav_tracking}
+	<tr><td class="trow1 smalltext"><a href="private.php?action=folders" class="usercp_nav_item usercp_nav_pmfolders">{$lang->ucp_nav_edit_folders}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_messenger_compose" version="1810"><![CDATA[<tr><td class="trow1 smalltext"><a href="private.php?action=send" class="usercp_nav_item usercp_nav_composepm">{$lang->ucp_nav_compose}</a></td></tr>]]></template>
+		<template name="usercp_nav_messenger_folder" version="1810"><![CDATA[<tr><td class="trow1 smalltext"><a href="private.php?fid={$folder_id}" class="usercp_nav_item {$class}">{$folder_name}</a></td></tr>]]></template>
+		<template name="usercp_nav_messenger_tracking" version="1810"><![CDATA[<tr><td class="trow1 smalltext"><a href="private.php?action=tracking" class="usercp_nav_item usercp_nav_pmtracking">{$lang->ucp_nav_tracking}</a></td></tr>]]></template>
+		<template name="usercp_nav_misc" version="1810"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercpmisc']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['usercpmisc']}.png" id="usercpmisc_img" class="expander" alt="[-]" title="[-]" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_misc}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercpmisc_e']}" id="usercpmisc_e">
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=usergroups" class="usercp_nav_item usercp_nav_usergroups">{$lang->ucp_nav_usergroups}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=editlists" class="usercp_nav_item usercp_nav_editlists">{$lang->ucp_nav_editlists}</a></td></tr>
+	{$attachmentop}
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=drafts" class="usercp_nav_item usercp_nav_drafts">{$draftcount}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=subscriptions" class="usercp_nav_item usercp_nav_subscriptions">{$lang->ucp_nav_subscribed_threads}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=forumsubscriptions" class="usercp_nav_item usercp_nav_fsubscriptions">{$lang->ucp_nav_forum_subscriptions}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="{$profile_link}" class="usercp_nav_item usercp_nav_viewprofile">{$lang->ucp_nav_view_profile}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_profile" version="1810"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercpprofile']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['usercpprofile']}.png" id="usercpprofile_img" class="expander" alt="[-]" title="[-]" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_profile}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercpprofile_e']}" id="usercpprofile_e">
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=profile" class="usercp_nav_item usercp_nav_profile">{$lang->ucp_nav_edit_profile}</a></td></tr>
+		{$changenameop}
+		<tr><td class="trow1 smalltext"><a href="usercp.php?action=password" class="usercp_nav_item usercp_nav_password">{$lang->ucp_nav_change_pass}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="usercp.php?action=email" class="usercp_nav_item usercp_nav_email">{$lang->ucp_nav_change_email}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="usercp.php?action=avatar" class="usercp_nav_item usercp_nav_avatar">{$lang->ucp_nav_change_avatar}</a></td></tr>
+		{$changesigop}
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=options" class="usercp_nav_item usercp_nav_options">{$lang->ucp_nav_edit_options}</a></td></tr>
+</tbody>]]></template>
+	</templates>
+</theme>
